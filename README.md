@@ -1,2 +1,2 @@
 # tekn-cloud-computing
-ini hasil undo commit - 1
+Hasil Praktikum Teknologi Cloud 205610012 Anggita Albiantara
