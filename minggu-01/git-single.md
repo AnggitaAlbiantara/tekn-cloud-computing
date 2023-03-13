@@ -168,3 +168,13 @@ Setelah itu, ```Confirm Merge```, branch yang kita kirimkan tadi sudah dimasukka
 ![merge3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/16bb3f7e29b9e2ec1c0f16f18f905577b6c6eae8/minggu-01/merge3.PNG)
 
 ![merge4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/16bb3f7e29b9e2ec1c0f16f18f905577b6c6eae8/minggu-01/merge4.PNG)
+
+# Sinkronisasi
+
+Suatu saat, bisa saja terjadi kita menggunakan komputer lain dan mengedit repo melalui repo lokal di komputer lain, setelah itu pindah ke kamputer lain lagi. Saat itu, kita perlu melakukan sinkronisasi ke kemputer lokal. Perintah untuk sinkronisasi adalah:
+
+```
+$ git pull
+```
+![pull5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/16bb3f7e29b9e2ec1c0f16f18f905577b6c6eae8/minggu-01/merge4.PNG)
+Perintah ini dikerjakan di direktori tempat repo lokal kita berada.
