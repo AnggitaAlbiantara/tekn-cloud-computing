@@ -20,16 +20,23 @@
     ![fork3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork3.PNG)
 
 Setelah proses tersebut, clone di komputer lokal:
-![gmb1](https://user-images.githubusercontent.com/114986359/224532326-e6d02cff-7545-4bf9-8083-07c13d569789.png)
-Setelah itu, konfigurasikan repo lokal kontributor. Pada kondisi saat ini, di komputer lokal sudah terdapat repo playground-1 yang berada pada direktori dengan nama yang sama. Untuk keperluan berkontribusi, ada 2 nama repo yang harus diatur:
+
+![clone](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/53575e8f7b59185b5c1f01acc3e5f000fabef8d3/minggu-01/clone.PNG)
+
+Setelah itu, konfigurasikan repo lokal kontributor. Pada kondisi saat ini, di komputer lokal sudah terdapat repo tekn-computing-2 yang berada pada direktori dengan nama yang sama. Untuk keperluan berkontribusi, ada 2 nama repo yang harus diatur:
    1. origin: menunjuk ke repo milik kontributor di GitHub, hasil dari fork.
-   2. upstream: menunjuk ke repo milik upstream author (repo asli) di account oldstager.
+   2. upstream: menunjuk ke repo milik upstream author (repo asli) di account Afifa9.
 Repo origin sudah dituliskan konfigurasinya pada saat melakukan proses clone dari repo kontributor. Konfigurasi repo upstream harus dibuat.
-![gmb2](https://user-images.githubusercontent.com/114986359/224532363-00c3a599-a8e1-4d57-a8e4-8d7033626b9d.png)
+
+![kolab1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab1.PNG)
+
 Tambahkan remote upstream:
-![gmb2](https://user-images.githubusercontent.com/114986359/224532491-99ac3d34-fe3b-4efa-9b5a-3350725e5940.png)
+
+![kolab1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab2.PNG)
+
 Hasil:
-![gmb2](https://user-images.githubusercontent.com/114986359/224532478-1c4265d2-a5dd-4020-8850-4dfe2d10220a.png)
+
+![kolab1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab3.PNG)
 
 # Mengirimkan Pull Request
 Setiap kali melakukan perubahan, kirim perubahan tersebut. Pengiriman ini disebut dengan Pull Request. Pada posisi ini, kontributor bisa mengirimkan kontribusi dengan cara mengirimkan pull request (PR) ke upstream author. Secara umum, langkah-langkahnya adalah sebagai berikut:
