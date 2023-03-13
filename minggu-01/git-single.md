@@ -2,13 +2,13 @@
 
 [ [<< Kembali](README.md) ]
 
-![gambar01](install-01.png)
-![gambar02](install-02.png)
-![gambar03](install-03.png)
-![gambar04](install-04.png)
-![gambar05](install-05.png)
-![gambar06](install-06.png)
-![gambar07](install-07.png)
+![gambar01]([install-01.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
+![gambar02]([install-02.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
+![gambar03]([install-03.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
+![gambar04]([install-04.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
+![gambar05]([install-05.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
+![gambar06]([install-06.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
+![gambar07]([install-07.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
 ![gambar08](install-08.png)
 ![gambar09](install-09.png)
 ![gambar10](install-10.png)
