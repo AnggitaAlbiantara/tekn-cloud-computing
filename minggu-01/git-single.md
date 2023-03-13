@@ -137,5 +137,5 @@ Perubahan isi bisa terjadi karena satu atau kombinasi beberapa hal berikut:
   3. Membuat file / direktori baru
   4. Menghapus direktori
 Untuk kasus-kasus tersebut, lakukan perubahan di komputer lokal, setelah itu push ke repo. 
-![clone1](https://user-images.githubusercontent.com/114986359/224526726-74a01da9-4abc-4e50-b274-91efc88e94ee.png)
-![push](https://user-images.githubusercontent.com/114986359/224527291-e9e7465a-d102-430d-9b1b-d2e8f74d266d.png)
+![isi](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5028c39e5ea4a0b51c8bcf0e68d2a3418713efdb/minggu-01/mengubah-isi-1.PNG)
+![push](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5028c39e5ea4a0b51c8bcf0e68d2a3418713efdb/minggu-01/mengubah-isi-2.PNG)
