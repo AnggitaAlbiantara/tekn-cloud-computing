@@ -155,3 +155,6 @@ Dengan menggunakan cara ini, setiap kali akan melakukan perubaham, perubahan itu
 ![isi1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/8f161b5872863806e1f23bb06d68e73676e0afa5/minggu-01/mengubah-isi-3.PNG)
 ![isi2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/050e0778ea0aff57dd42622bac6267757994d5ab/minggu-01/mengubah-isi-4_1.PNG)
 ![isi3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/8f161b5872863806e1f23bb06d68e73676e0afa5/minggu-01/mengubah-isi-4.PNG)
+
+Setelah itu, kirim *pull request (PR)*, selanjutnya kita bisa langsung merge :
+![pull](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5cb3636d2751c84bc9a0810b81862a61693ccf2d/minggu-01/Pull.PNG)
