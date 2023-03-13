@@ -151,5 +151,6 @@ Dengan menggunakan cara ini, setiap kali akan melakukan perubaham, perubahan itu
 6. Merge pull request di GitHub
 7. Merge branch untuk menampung perubahan-perubahan tersebut ke master.
 8. Selesai.
+
 ![isi1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/8f161b5872863806e1f23bb06d68e73676e0afa5/minggu-01/mengubah-isi-3.PNG)
 ![isi2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/8f161b5872863806e1f23bb06d68e73676e0afa5/minggu-01/mengubah-isi-4.PNG)
