@@ -9,10 +9,12 @@
     3. Pada sisi kanan atas, klik tulisan Fork :
 
 ![fork1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork1.PNG)
-    4. Selanjutnya isi name owner, Repo name, keterangan, lalu klik **Create Fork**
+    
+   4. Selanjutnya isi name owner, Repo name, keterangan, lalu klik **Create Fork**
     
 ![fork2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork2.PNG)
-    5. Maka hasilnya akan seperti gambar dibawah ini.
+    
+   5. Maka hasilnya akan seperti gambar dibawah ini.
 ![fork3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork3.PNG)
 
 Setelah proses tersebut, clone di komputer lokal:
