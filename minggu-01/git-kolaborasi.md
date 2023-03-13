@@ -58,6 +58,6 @@ Sebelum melakukan perubahan, pastikan:
   6. Pilih ```Compare and pull request```, kemudian isikan deskripsi PR dan klik pada ```Create pull request```:
   ![kolab7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab7.PNG)
   7. Pada repo upstream author, muncul angka 1 (artinya jumlahnya 1) pada Pull requests di bagian atas.
-  8. Upstream author bisa menyetujui setelah melakukan review: klik pada Pull requests, akan muncul PR dengan message seperti yang ditulis oleh kontributor     (Add: contributor). Klik pada PR tersebut, review kemudian klik Merge pull request diikuti dengan Confirm merge. Setelah itu, status akan berubah menjadi   Merged.
+  8. Upstream author bisa menyetujui setelah melakukan review: klik pada Pull requests, akan muncul PR dengan message seperti yang ditulis oleh kontributor (Add: contributor). Klik pada PR tersebut, review kemudian klik Merge pull request diikuti dengan Confirm merge. Setelah itu, status akan berubah menjadi Merged.
   9. Sinkronkan semua repo (lokal maupun GitHub kontributor)
   ![kolab8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab8.PNG)
