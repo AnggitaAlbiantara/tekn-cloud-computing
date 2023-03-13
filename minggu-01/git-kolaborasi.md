@@ -6,12 +6,13 @@
   3. Kontributor harus mem-fork repo upstream author sehingga di repo kontributor muncul repo tersebut. Proses forking ini dijelaskan dengan langkah-langkah berikut:
     1. Login ke GitHub, 
     2. Akses repo yang akan di-fork : https://github.com/Afifa9/tekn-computing-2, 
-    3. Pada sisi kanan atas, klik Fork :
+    3. Pada sisi kanan atas, klik tulisan Fork :
 
 ![fork1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork1.PNG)
-
+    4. Selanjutnya isi name owner, Repo name, keterangan, lalu klik **Create Fork**
+    
 ![fork2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork2.PNG)
-
+    5. Maka hasilnya akan seperti gambar dibawah ini.
 ![fork3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork3.PNG)
 
 Setelah proses tersebut, clone di komputer lokal:
