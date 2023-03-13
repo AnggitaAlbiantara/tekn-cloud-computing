@@ -1,2 +1,2 @@
 # tekn-cloud-computing
-Hasil PRaktikum Teknologi Cloud 205610012 Anggita Albiantara
+Hasil Praktikum Teknologi Cloud 205610012 Anggita Albiantara
