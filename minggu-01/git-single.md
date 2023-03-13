@@ -104,19 +104,27 @@ $ git config --lists
 
 Langkah ini cukup dilakukan sekali saja, kecuali jika kalian ingin melakukan perubahan nama dan email.
 
-# 03 Membuat Repo Di Account Sendiri
-# Membuat Repo
-  Untuk membuat repo, gunakan langkah-langkah berikut:
-  1.  Klik tanda **+** pada bagian atas setelah login, pilih **New repository**
-    ![gmb22](https://user-images.githubusercontent.com/114986359/224526576-e02feb2f-e146-48d6-bbfa-5faa9bb1fa6c.png)
-  2.  Isikan nama, keterangan, serta lisensi. Jika dikehendaki, bisa membuat repo **Private**
-    ![gmb23](https://user-images.githubusercontent.com/114986359/224526595-9fc154c3-e400-42cd-b186-43453d3dd614.png)
-  3. Klik ```Create Repository```
-    Setelah langkah-langkah tersebut, repo akan dibuat dan bisa diakses menggunakan pola ```https://github.com/username/reponame```. Pada repo tersebut, hanya akan muncul 1 file, yaitu LICENSE. Jika memilih membuat README pada saat langkah ke 2, juga akan muncul README.md. Ada atau tidak ada README.md tidak mempunyai efek apapun pada langkah ini.
+# 03 Membuat Repo Di Account Git Kita
+  Untuk membuat repo, dapat menggunakan langkah-langkah berikut :
+  1.  Klik tanda **+** pada bagian atas dekat profil Git kita, klik lalu pilih **New repository**
+    ![repo1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c082351cb70c186dd935708c5bb00fa93a36852a/minggu-01/membuat-repo.PNG)
+  2.  Isikan nama owner, nama repo, keterangan, pilih settingan repo untuk private atau public, checklist untuk add README.md atau tidak, serta pilih lisensi.
+    ![repo2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c082351cb70c186dd935708c5bb00fa93a36852a/minggu-01/membuat-repo-2.PNG)
+  3. Klik **Create Repository**
+    Setelah langkah-langkah tersebut berhasil, maaka repo akan dibuat dan bisa diakses dengan menggunakan pola ```https://github.com/username/reponame```. Pada repo tersebut, hanya akan muncul 1 file, yaitu LICENSE. Jika kalian memilih membuat README pada saat langkah ke 2, juga akan muncul README.md. Ada atau tidak ada README.md tidak mempunyai efek apapun pada langkah ini.
+    ![repo3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c082351cb70c186dd935708c5bb00fa93a36852a/minggu-01/membuat-repo-3.PNG)
+    
 # Clone Repo
-![clone](https://user-images.githubusercontent.com/114986359/224526473-b993135e-1d04-4261-99af-9abd908b68b0.png)
+Untuk clone repo, kalian dapat mengetikkan code dibawah pada CMD,
+```git clone https://github.com/UserName/NameRepository```
+![clone](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/e90682af032420d78376421fb21ff55cc878cbd9/minggu-01/clone.PNG)
+
+Sehingga hasil clonenya akan masuk ke penyimpanan lokal komputer kita.
+![clone2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/e90682af032420d78376421fb21ff55cc878cbd9/minggu-01/hasil-clone.PNG)
+
 # Mengelola Repo
-  Setelah ```clone``` ke komputer lokal, semua manipulasi konten dilakukan di komputer lokal dan hasilnya akan di-*push* ke remote repo di GitHub. Dengan demikian, jangan berganti-ganti remote lokal, sekali dibuat disitu, tetap berada disitu. Jika kehilangan repo lokal, clone ulang ke direktori yang bersih (kosong) setelah itu baru lakukan pengelolaan repo. Beberapa hal yang biasanya dilakukan akan diuraikan berikut ini.
+  Setelah melakukan ```clone``` ke penyimpanan lokal komputer kita, semua manipulasi konten dilakukan di komputer lokal dan hasilnya akan di-**push** ke remote repo di GitHub. Dengan demikian, jangan berganti-ganti remote lokal, sekali dibuat disitu, tetap berada disitu. Jika kehilangan repo lokal, maka harus melakukan clone ulang ke direktori yang bersih (kosong) setelah itu baru lakukan pengelolaan repo. Beberapa hal yang biasanya dilakukan seperti berikut ini.
+
 # Mengubah Isi - Push Tanpa Branching dan Merging
 Perubahan isi bisa terjadi karena satu atau kombinasi beberapa hal berikut:
   1. File dihapus
@@ -126,4 +134,3 @@ Perubahan isi bisa terjadi karena satu atau kombinasi beberapa hal berikut:
 Untuk kasus-kasus tersebut, lakukan perubahan di komputer lokal, setelah itu push ke repo. 
 ![clone1](https://user-images.githubusercontent.com/114986359/224526726-74a01da9-4abc-4e50-b274-91efc88e94ee.png)
 ![push](https://user-images.githubusercontent.com/114986359/224527291-e9e7465a-d102-430d-9b1b-d2e8f74d266d.png)
-# Source Code : [git-single.txt](https://github.com/Afifa9/tekn-cloud-computing/files/10950243/git-single.txt)
