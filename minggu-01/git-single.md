@@ -195,3 +195,6 @@ Suatu saat, mungkin kita sudah terlanjur mem-*push* perubahan ke repo GitHub, se
 ![undo1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/408b48f54d0b124d9fcd9737f7f3b994db450b2a/minggu-01/undo.PNG)
 
 ![undo2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/408b48f54d0b124d9fcd9737f7f3b994db450b2a/minggu-01/undo2.PNG)
+
+Selanjutnya, tinggal di-*push* ke repo GitHub.
+![undo3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c7a859cfefaea8a3cadc6bc158b6ef560d8077bc/minggu-01/undo4.PNG)
