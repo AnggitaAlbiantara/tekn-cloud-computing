@@ -44,12 +44,15 @@ Sebelum melakukan perubahan, pastikan:
   1. Sudah ada koordinasi secara manual tentang perubahan-perubahan yang akan dilakukan.
   2. Setelah melakukan perubahan-perubahan, pastikan bahwa isi repo lokal tersinkronisasi dengan repo dari upstream author.
   3. Cara melakukan sinkronisasi:
-  ![gmb3](https://user-images.githubusercontent.com/114986359/224532643-a372d96e-c241-4963-9b5a-b33666863399.png)
   4. Lakukan perubahan-perubahan, setelah itu push ke origin (milik kontributor)
-  ![gmb3](https://user-images.githubusercontent.com/114986359/224532676-97fc3a20-54ca-4d53-bb06-752a1b42e1c9.png)
-  ![gmb4](https://user-images.githubusercontent.com/114986359/224532704-33ce5703-76f0-456d-8e52-c52f6765cfeb.png)
-  ![gmb5](https://user-images.githubusercontent.com/114986359/224532728-0f4522e3-f4c1-44bf-938f-bc47bfcdcda7.png)
-  ![gmb6](https://user-images.githubusercontent.com/114986359/224532744-0ed13019-48ae-43f2-9e7f-8635147e7e8c.png)
+  ![kolab2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab2.PNG)
+  
+  ![kolab3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab3.PNG)
+  
+  ![kolab4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab4.PNG)
+  
+  ![kolab5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab5.PNG)
+  
   5. Setelah itu, buka halaman Web dari repo kontributor https://github.com/Afifa9/tekn-cloud-computing-1. Pada halaman tersebut akan ditampilkan isi yang kita push.
   ![gmb01](https://user-images.githubusercontent.com/114986359/224533037-86b08d83-bc8b-4c01-8233-507b54869577.png)
   6. Pilih ```Compare and pull request```, kemudian isikan deskripsi PR dan klik pada ```Create pull request```:
