@@ -104,14 +104,18 @@ $ git config --lists
 
 Langkah ini cukup dilakukan sekali saja, kecuali jika kalian ingin melakukan perubahan nama dan email.
 
-# 03 Membuat Repo Di Account Git Kita
+# 03. Membuat Repo Di Account Git Kita
   Untuk membuat repo, dapat menggunakan langkah-langkah berikut :
   1.  Klik tanda **+** pada bagian atas dekat profil Git kita, klik lalu pilih **New repository**
-    ![repo1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c082351cb70c186dd935708c5bb00fa93a36852a/minggu-01/membuat-repo.PNG)
-  2.  Isikan nama owner, nama repo, keterangan, pilih settingan repo untuk private atau public, checklist untuk add README.md atau tidak, serta pilih lisensi.
-    ![repo2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c082351cb70c186dd935708c5bb00fa93a36852a/minggu-01/membuat-repo-2.PNG)
+  
+  ![repo1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c082351cb70c186dd935708c5bb00fa93a36852a/minggu-01/membuat-repo.PNG)
+  
+  2. Isikan nama owner, nama repo, keterangan, pilih settingan repo untuk private atau public, checklist untuk add README.md atau tidak, serta pilih lisensi.
+  
+  ![repo2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c082351cb70c186dd935708c5bb00fa93a36852a/minggu-01/membuat-repo-2.PNG)
+  
   3. Klik **Create Repository**
-    Setelah langkah-langkah tersebut berhasil, maaka repo akan dibuat dan bisa diakses dengan menggunakan pola ```https://github.com/username/reponame```. Pada repo tersebut, hanya akan muncul 1 file, yaitu LICENSE. Jika kalian memilih membuat README pada saat langkah ke 2, juga akan muncul README.md. Ada atau tidak ada README.md tidak mempunyai efek apapun pada langkah ini.
+Setelah langkah-langkah tersebut berhasil, maaka repo akan dibuat dan bisa diakses dengan menggunakan pola ```https://github.com/username/reponame```. Pada repo tersebut, hanya akan muncul 1 file, yaitu LICENSE. Jika kalian memilih membuat README pada saat langkah ke 2, juga akan muncul README.md. Ada atau tidak ada README.md tidak mempunyai efek apapun pada langkah ini.
     ![repo3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c082351cb70c186dd935708c5bb00fa93a36852a/minggu-01/membuat-repo-3.PNG)
     
 # Clone Repo
