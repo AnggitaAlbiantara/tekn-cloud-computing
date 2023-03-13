@@ -160,7 +160,11 @@ Setelah itu, kirim *pull request (PR)*, selanjutnya kita bisa langsung merge :
 ![pull](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5cb3636d2751c84bc9a0810b81862a61693ccf2d/minggu-01/Pull.PNG)
 
 Setelah itu, ```Confirm Merge```, branch yang kita kirimkan tadi sudah dimasukkan ke branch ```master```. Setelah itu, merge di komputer lokal kita :
+
 ![merge1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/16bb3f7e29b9e2ec1c0f16f18f905577b6c6eae8/minggu-01/merge1.PNG)
+
 ![merge2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/16bb3f7e29b9e2ec1c0f16f18f905577b6c6eae8/minggu-01/merge2.PNG)
+
 ![merge3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/16bb3f7e29b9e2ec1c0f16f18f905577b6c6eae8/minggu-01/merge3.PNG)
+
 ![merge4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/16bb3f7e29b9e2ec1c0f16f18f905577b6c6eae8/minggu-01/merge4.PNG)
