@@ -177,4 +177,13 @@ Suatu saat, bisa saja terjadi kita menggunakan komputer lain dan mengedit repo m
 $ git pull
 ```
 ![pull5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/16bb3f7e29b9e2ec1c0f16f18f905577b6c6eae8/minggu-01/merge4.PNG)
+
 Perintah ini dikerjakan di direktori tempat repo lokal kita berada.
+
+# Membatalkan Perubahan
+
+Praktik yang baik adalah membuat *branch* pada saat kita akan melakukan perubahan-perubahan. Jika perubahan-perubahan yang kita lakukan sudah sedemikian kacaunya, maka kita bisa membuat supaya perubahan-perubahan yang kacau tersebut hilang dan kembali ke kondisi bersih seperti semula.
+
+![batal1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/04c3a13909a588a1ef5f27f0575d7beedc2eb6cc/minggu-01/all%20redme%202.PNG)
+
+![batal2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/04c3a13909a588a1ef5f27f0575d7beedc2eb6cc/minggu-01/all%20redme%202_1.PNG)
