@@ -4,73 +4,106 @@
 sebelum kita menginstall Git di windows, kita sudah harus memiliki editor teks. Bisa menggunakan [Notepad++](https://notepad-plus-plus.org/) atau [Visual Studion Code](https://code.visualstudio.com/) atau [Vim](https://www.vim.org/).
 
 1. Setelah download [Git](https://git-scm.com/downloads), lalu open file installernya yang telah di download, lalu akan muncul lisensi, selanjutnya klik **Next**.
+
 ![install-01](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-01.PNG)
 
 2. Kemudian pilih folder untuk penyimpanan Git, Secara default Git akan tersimpan di folder C:\Program Files\Git, setelah itu klik **Next**.
+
 ![install-02](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-02.PNG)
 
-3. Lalu klik **Next**, biarkan settingan Git di setting secara default. 
+3. Lalu klik **Next**, biarkan settingan Git di setting secara default.
+
 ![install-03](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-03.PNG)
 
 4. Klik **Next**.
+
 ![install-04](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-04.PNG)
 
 5. Lalu pilih editor teks yang ingin digunakan (Disini saya menggunakan editor teks Visual Code Code), lalu klik **Next**.
+
 ![install-05](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-05.PNG)
 
 6. Checklist pada pilihan **Let Git Decide** selanjutnya klik **Next**.
+
 ![install-06](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-06.PNG)
 
 7. Selanjutnya checklist pada pilihan **Git from the command line.....**, lalu klik **Next**.
+
 ![install-07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-07.PNG)
 
 8. Selanjutnya checklist pada pilihan **Use Bundled OpenSSH**, lalu klik **Next**.
+
 ![install-08](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-08.PNG)
 
 9. Checklist pada pilihan **Use the OpenSSH library**, klik **Next**.
+
 ![install-09](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-09.PNG)
 
 10. Checklist pada pilihan **Checkout windows-style....**, klik **Next**.
+
 ![install-10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-10.PNG)
 
 11. Checklist lagi pada pilihan **Use MinTTY...**, klik **Next**.
+
 ![install-11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-11.PNG)
 
 12. Checklist pada pilihan **Default**, klik **Next**.
+
 ![install-12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-12.PNG)
 
 13. Lalu pilih **Git Credential Manager**, **Next**.
+
 ![install-13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-13.PNG)
 
 14. Pilih **Enable file system caching**, **Next**.
+
 ![install-14](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-14.PNG)
 
 15. Checklist pada **Enable experimental.....**, klik **Next**.
+
 ![install-15](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-15.PNG)
 
 16. Tunggu hingga proses installasi berhasil.
+
 ![install-16](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-16.PNG)
 
 17. Lalu klik **Finish**.
+
 ![install-17](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-17.PNG)
 
 18. Jika berhasil terinstal, maka pada windows terdapat aplikasi **Git**.
+
 ![install-18](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-18.PNG)
 
 19. Tampilan jika kita menggunakan aplikasi **Git-Bash**.
+
 ![install-19](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-19.PNG)
 
 20. Tampilan jika kita menggunakan aplikasi **Git-Gui**.
+
 ![install-20](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-20.PNG)
 
 21. Cek versi Git dengan cara ketikkan pada CMD **git --version**.
+
 ![install-21](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4bf8182d24b3927693c1f722e50351cb7b8f4157/minggu-01/install-21.PNG)
 
 
 # 02. Konfigurasi Git Pada Windows
+Konfigurasi Git pada windows dapat dilakukan dengan cara mengetikkan kode dibawah ini di CMD
+```
+$ git config --global user.name "AnggitaAlbiantara
+$ git config --global user.email anggita.albiantara@students.utdi.ac.id
+```
+![konfig1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/f9ab2c90c09b90fbacf1ae39145622ad0f97faaf/minggu-01/konfig1.PNG)
 
-  ![gmb20](https://user-images.githubusercontent.com/114986359/224531311-65cb47fc-4d05-4b9f-8139-e2a52f7f8926.png)
-  ![gmb21](https://user-images.githubusercontent.com/114986359/224531322-7b55c545-5546-4b2d-aa92-6f95b82e6e63.png)
+Selanjutnya jika kalian ingin melihat hasil dari konfigurasi diatas maka kalian dapat mengetikkan code berikut di CMD
+```
+$ git config --lists
+```
+![konfig2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/f9ab2c90c09b90fbacf1ae39145622ad0f97faaf/minggu-01/konfig2.png)
+
+Langkah ini cukup dilakukan sekali saja, kecuali jika kalian ingin melakukan perubahan nama dan email.
+
 # 03 Membuat Repo Di Account Sendiri
 # Membuat Repo
   Untuk membuat repo, gunakan langkah-langkah berikut:
