@@ -1,4 +1,4 @@
-# 04. Kolaborasi
+# 04. Git Kolaborasi
 # FORK
   Fork adalah membuat clone dari suatu repo di GitHub milik upstream author, diletakkan ke milik kontributor. Fork hanya dilakukan sekali saja. Pada dasarnya, proses untuk fork ini meliputi:
   1. Fork repo di web GitHub.
@@ -7,9 +7,13 @@
     1. Login ke GitHub, 
     2. Akses repo yang akan di-fork : https://github.com/Afifa9/tekn-computing-2, 
     3. Pada sisi kanan atas, klik Fork :
-      ![fork1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork1.PNG)
-      ![fork2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork2.PNG)
-      ![fork3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork3.PNG)
+
+![fork1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork1.PNG)
+
+![fork2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork2.PNG)
+
+![fork3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5a6d3e1c47c75c633e3aa31fa0ef35c53edae211/minggu-01/fork3.PNG)
+
 Setelah proses tersebut, clone di komputer lokal:
 ![gmb1](https://user-images.githubusercontent.com/114986359/224532326-e6d02cff-7545-4bf9-8083-07c13d569789.png)
 Setelah itu, konfigurasikan repo lokal kontributor. Pada kondisi saat ini, di komputer lokal sudah terdapat repo playground-1 yang berada pada direktori dengan nama yang sama. Untuk keperluan berkontribusi, ada 2 nama repo yang harus diatur:
