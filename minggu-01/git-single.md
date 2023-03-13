@@ -139,3 +139,17 @@ Perubahan isi bisa terjadi karena satu atau kombinasi beberapa hal berikut:
 Untuk kasus-kasus tersebut, lakukan perubahan di komputer lokal, setelah itu push ke repo. 
 ![isi](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5028c39e5ea4a0b51c8bcf0e68d2a3418713efdb/minggu-01/mengubah-isi-1.PNG)
 ![push](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5028c39e5ea4a0b51c8bcf0e68d2a3418713efdb/minggu-01/mengubah-isi-2.PNG)
+
+# Mengubah Isi dengan Branching and Merging
+Dengan menggunakan cara ini, setiap kali akan melakukan perubaham, perubahan itu dilakukan di komputer lokal dengan membuat suatu *cabang* yang nantinya digunakan untuk menampung perubahan-perubahan tersebut. Setelah itu, cabang itu yang akan dikirim ke repo GitHub untuk dimintai review kemudian digabungkan (```merge```) ke master. Secara umum, repo yang dibuat biasanya sudah mempunyai satu branch yang disebut dengan ```master```. Cara ini lebih aman, terstruktur, terkendali, dan mempunyai history yang lebih baik. Jika perubahan yang kita buat sudah terlalu kacau dan kita menyesal, maka ada cara untuk "membersihkan" repo lokal kita. Secara umum, langkahnya adalah sebagai berikut :
+
+1. Buat branch untuk menampung perubahan-perubahan
+2. Lakukan perubahan-perubahan
+3. Add dan commit perubahan-perubahan tersebut ke branch
+4. Kembali ke repo master
+5. Buat pull request di GitHub
+6. Merge pull request di GitHub
+7. Merge branch untuk menampung perubahan-perubahan tersebut ke master.
+8. Selesai.
+![isi1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/8f161b5872863806e1f23bb06d68e73676e0afa5/minggu-01/mengubah-isi-3.PNG)
+![isi2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/8f161b5872863806e1f23bb06d68e73676e0afa5/minggu-01/mengubah-isi-4.PNG)
