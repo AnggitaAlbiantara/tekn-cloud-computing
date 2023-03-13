@@ -2,7 +2,7 @@
 
 [ [<< Kembali](README.md) ]
 
-![gambar01]([install-01.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
+![gambar01](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01/install-01.png)
 ![gambar02]([install-02.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
 ![gambar03]([install-03.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
 ![gambar04]([install-04.png](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/tree/master/minggu-01))
