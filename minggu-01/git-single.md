@@ -199,3 +199,13 @@ Suatu saat, mungkin kita sudah terlanjur mem-*push* perubahan ke repo GitHub, se
 Selanjutnya, tinggal di-*push* ke repo GitHub.
 
 ![undo3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c7a859cfefaea8a3cadc6bc158b6ef560d8077bc/minggu-01/undo4.PNG)
+
+Untuk kembali ke perubahan pada saat yang sudah lama, yang perlu dilakukan adalah melakukan ```git revert <posisi>``` kemudian mengedit secara manual kemudian push ke repo.
+
+![revert1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c606ddcb4977e93e469f4d7254e34b39a137bb12/minggu-01/revert.PNG)
+
+![revert2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c606ddcb4977e93e469f4d7254e34b39a137bb12/minggu-01/revert2.PNG)
+
+![revert3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c606ddcb4977e93e469f4d7254e34b39a137bb12/minggu-01/revert3.PNG)
+
+![revert4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c606ddcb4977e93e469f4d7254e34b39a137bb12/minggu-01/revert4.PNG)
