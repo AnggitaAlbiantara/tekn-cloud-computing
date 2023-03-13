@@ -26,15 +26,7 @@ Setelah proses tersebut, clone di komputer lokal:
 Setelah itu, konfigurasikan repo lokal kontributor. Pada kondisi saat ini, di komputer lokal sudah terdapat repo tekn-computing-2 yang berada pada direktori dengan nama yang sama. Untuk keperluan berkontribusi, ada 2 nama repo yang harus diatur:
    1. origin: menunjuk ke repo milik kontributor di GitHub, hasil dari fork.
    2. upstream: menunjuk ke repo milik upstream author (repo asli) di account Afifa9.
-Repo origin sudah dituliskan konfigurasinya pada saat melakukan proses clone dari repo kontributor. Konfigurasi repo upstream harus dibuat.
-
-![kolab1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab1.PNG)
-
-Tambahkan remote upstream:
-
-![kolab1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab1.PNG)
-
-Hasil:
+Repo origin sudah dituliskan konfigurasinya pada saat melakukan proses clone dari repo kontributor. Konfigurasi repo upstream harus dibuat, lalu tambahkan remote upstream, hasilnya maka akan seperti gambar dibawah ini
 
 ![kolab1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab1.PNG)
 
