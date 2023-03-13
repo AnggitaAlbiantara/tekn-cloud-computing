@@ -54,11 +54,10 @@ Sebelum melakukan perubahan, pastikan:
   ![kolab5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab5.PNG)
   
   5. Setelah itu, buka halaman Web dari repo kontributor https://github.com/Afifa9/tekn-cloud-computing-1. Pada halaman tersebut akan ditampilkan isi yang kita push.
-  ![gmb01](https://user-images.githubusercontent.com/114986359/224533037-86b08d83-bc8b-4c01-8233-507b54869577.png)
+  ![kolab6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab6.PNG)
   6. Pilih ```Compare and pull request```, kemudian isikan deskripsi PR dan klik pada ```Create pull request```:
-  ![gmb02](https://user-images.githubusercontent.com/114986359/224533087-11e3756c-a897-4c2c-82bc-488b0c7b7b0f.png)
+  ![kolab7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab7.PNG)
   7. Pada repo upstream author, muncul angka 1 (artinya jumlahnya 1) pada Pull requests di bagian atas.
   8. Upstream author bisa menyetujui setelah melakukan review: klik pada Pull requests, akan muncul PR dengan message seperti yang ditulis oleh kontributor     (Add: contributor). Klik pada PR tersebut, review kemudian klik Merge pull request diikuti dengan Confirm merge. Setelah itu, status akan berubah menjadi   Merged.
   9. Sinkronkan semua repo (lokal maupun GitHub kontributor)
-  ![gmb7](https://user-images.githubusercontent.com/114986359/224533184-cea0ac68-21a0-4122-9e5f-013341fd9b82.png)
-  **Source Code** : [kolaborasi.txt](https://github.com/Afifa9/tekn-cloud-computing/files/10950318/kolaborasi.txt)
+  ![kolab8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/aea1c56a17333ec10cba81f9275e5910266ed30b/minggu-01/kolab8.PNG)
