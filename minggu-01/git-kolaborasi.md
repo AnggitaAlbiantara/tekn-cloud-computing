@@ -1,9 +1,9 @@
 # 04. Git Kolaborasi
 # FORK
   Fork adalah membuat clone dari suatu repo di GitHub milik upstream author, diletakkan ke milik kontributor. Fork hanya dilakukan sekali saja. Pada dasarnya, proses untuk fork ini meliputi:
-  1. Fork repo di web GitHub.
-  2. Clone fork tersebut di komputer lokal.
-  3. Kontributor harus mem-fork repo upstream author sehingga di repo kontributor muncul repo tersebut. Proses forking ini dijelaskan dengan langkah-langkah berikut:
+1. Fork repo di web GitHub.
+2. Clone fork tersebut di komputer lokal.
+3. Kontributor harus mem-fork repo upstream author sehingga di repo kontributor muncul repo tersebut. Proses forking ini dijelaskan dengan langkah-langkah berikut:
     1. Login ke GitHub, 
     2. Akses repo yang akan di-fork : https://github.com/Afifa9/tekn-computing-2, 
     3. Pada sisi kanan atas, klik tulisan Fork :
