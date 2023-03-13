@@ -187,3 +187,11 @@ Praktik yang baik adalah membuat *branch* pada saat kita akan melakukan perubaha
 ![batal1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/04c3a13909a588a1ef5f27f0575d7beedc2eb6cc/minggu-01/all%20redme%202.PNG)
 
 ![batal2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/04c3a13909a588a1ef5f27f0575d7beedc2eb6cc/minggu-01/all%20redme%202_1.PNG)
+
+# Undo Commit Terakhir
+
+Suatu saat, mungkin kita sudah terlanjur mem-*push* perubahan ke repo GitHub, setelah itu kita baru menyadari bahwa perubahan tersebut salah. Untuk itu, kita bisa melakukan ```git revert```.
+
+![undo1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/408b48f54d0b124d9fcd9737f7f3b994db450b2a/minggu-01/undo.PNG)
+
+![undo2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/408b48f54d0b124d9fcd9737f7f3b994db450b2a/minggu-01/undo2.PNG)
