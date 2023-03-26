@@ -98,36 +98,32 @@ Sebelum kita menginstall Git di windows, kita wajib memiliki teks editor. Bisa m
 ![install-21](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-21.PNG)
 
 # 02 konfigurasi git di windows
-Konfigurasi Git pada windows dapat dilakukan dengan cara mengetikkan kode dibawah ini
-```
-$ git config --global user.name "(sesuai username pada git)"
-$ git config --global user.email sesuai email yang digunakan pada git
-```
-![konfig1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture14.png)
+Konfigurasi Git pada windows dapat dilakukan dengan cara mengetikkan kode dibawah ini dengan menggunakan CMD
+
+![konfig1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/konfig1.PNG)
 
 Selanjutnya jika kalian ingin melihat hasil dari konfigurasi diatas maka kalian dapat mengetikkan code berikut
-```
-$ git config --lists
-```
-![konfig2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture15.png)
+
+![konfig2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/konfig2.png)
 
 Langkah ini cukup dilakukan sekali saja, kecuali jika anda ingin melakukan perubahan nama ataupun email yang sudah digunakan.
 
 
-# 03. Membuat Repo Di Account Git Kita
+# 03. Mengelola Repo Di Account Git Kita
+## Membuat Repo
   Untuk membuat repo, dapat menggunakan langkah-langkah berikut :
   1.  Klik tanda **+** pada bagian atas dekat profil Git, lalu pilih **New repository**
   
-  ![repo1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture16.png)
+  ![repo1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/membuat-repo.PNG)
   
   2. Isikan nama owner, nama repo, keterangan, pilih settingan repo untuk private atau public, checklist untuk add README.md atau tidak, serta pilih lisensi.
 
-  ![repo2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture17.png)
+  ![repo2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/membuat-repo-2.PNG)
   
   3. Klik **Create Repository**
   Setelah langkah tersebut berhasil, maka repo akan dibuat dan bisa diakses dengan menggunakan pola ```https://github.com/username/reponame```. Pada repo tersebut, hanya akan muncul 1 file, yaitu LICENSE. Jika kalian memilih membuat README pada saat langkah ke 2, juga akan muncul file README.md.
 
-  ![repo3](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture18.png)
+  ![repo3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/membuat-repo-3.PNG)
 
    Ada atau tidaknya README.md tidak ada efek apapun di langkah ini.
  
