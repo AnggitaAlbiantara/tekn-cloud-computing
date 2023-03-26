@@ -1,45 +1,222 @@
-# 01 INSTALASI GIT
-  ![gmb01](https://user-images.githubusercontent.com/114986359/224531390-35c58faf-87f4-48a7-95d5-97fe68b1d704.png)
-![gmb01](https://user-images.githubusercontent.com/114986359/224531402-1d5a9b64-c50f-45ea-99f4-69897790cadc.png)
-![gmb01](https://user-images.githubusercontent.com/114986359/224531411-483eafd9-7bdc-467a-912b-6ac413d41887.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531425-f88c6409-c5f5-489c-beb6-08c84b84101c.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531434-eab5fb41-e632-4fea-a9d1-908e23fde719.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531447-3c5455cd-0049-407e-9c42-dfb41425748f.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531465-31499b7f-bf60-4a20-bdbc-aeb4a58277ed.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531472-eed80c80-a828-4788-8758-1be7c763216e.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531478-3e68ae60-48b4-462c-b9ac-a59fe243c8d0.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531483-6d93a72d-10ce-4c30-a126-570ec9b4808e.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531490-744b2c22-dd2b-438a-92f5-ef40279d1b72.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531506-400a9a41-979c-4de2-bde5-f2c1baa59b44.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531509-856b80ae-9f06-4291-b39f-a5d61745e745.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531518-39a77db6-b10c-4cd2-ad17-619dd9d78c08.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531526-9fa010cb-6e2e-4562-966a-847afcfbdbf8.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531533-abda9381-240a-4c02-b08e-40385368f34a.png)
-![gmb04](https://user-images.githubusercontent.com/114986359/224531543-0cabdb78-e8c7-4630-b87b-0d06148ccd03.png)
+# Instalasi Git Pada Windows
 
-# 02 Konfigurasi GIT
-  ![gmb20](https://user-images.githubusercontent.com/114986359/224531311-65cb47fc-4d05-4b9f-8139-e2a52f7f8926.png)
-  ![gmb21](https://user-images.githubusercontent.com/114986359/224531322-7b55c545-5546-4b2d-aa92-6f95b82e6e63.png)
-# 03 Membuat Repo Di Account Sendiri
-# Membuat Repo
-  Untuk membuat repo, gunakan langkah-langkah berikut:
-  1.  Klik tanda **+** pada bagian atas setelah login, pilih **New repository**
-    ![gmb22](https://user-images.githubusercontent.com/114986359/224526576-e02feb2f-e146-48d6-bbfa-5faa9bb1fa6c.png)
-  2.  Isikan nama, keterangan, serta lisensi. Jika dikehendaki, bisa membuat repo **Private**
-    ![gmb23](https://user-images.githubusercontent.com/114986359/224526595-9fc154c3-e400-42cd-b186-43453d3dd614.png)
-  3. Klik ```Create Repository```
-    Setelah langkah-langkah tersebut, repo akan dibuat dan bisa diakses menggunakan pola ```https://github.com/username/reponame```. Pada repo tersebut, hanya akan muncul 1 file, yaitu LICENSE. Jika memilih membuat README pada saat langkah ke 2, juga akan muncul README.md. Ada atau tidak ada README.md tidak mempunyai efek apapun pada langkah ini.
-# Clone Repo
-![clone](https://user-images.githubusercontent.com/114986359/224526473-b993135e-1d04-4261-99af-9abd908b68b0.png)
+Sebelum kita menginstall Git di windows, kita wajib memiliki teks editor. Bisa menggunakan [Notepad++](https://notepad-plus-plus.org/) atau [Visual Studion Code](https://code.visualstudio.com/) atau [Vim](https://www.vim.org/).
+
+1. Setelah download [Git](https://git-scm.com/downloads), lalu buka installer yang telah di download, lalu akan muncul lisensi, selanjutnya klik **Next**.
+
+
+![install-01](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-01.PNG)
+
+
+2. Kemudian pilih folder untuk menyimpan Git, Secara default Git akan tersimpan di folder C:\Program Files\Git, setelah itu klik **Next**.
+
+![install-02](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-02.PNG)
+
+
+3. Lalu klik **Next**, biarkan settingan Git secara default.
+
+![install-03](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-03.PNG)
+
+
+4. Klik **Next**.
+
+![install-04](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-04.PNG)
+
+
+5. Lalu pilih editor teks yang ingin anda gunakan (Disini saya menggunakan editor teks Visual Code Code), lalu klik **Next**.
+
+![install-05](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-05.PNG)
+
+
+6. Checklist pada pilihan **Let Git decide** selanjutnya klik **Next**.
+
+![install-06](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-06.PNG)
+
+
+7. Checklist pada pilihan **Git from the command line and also from 3rd-party software** selanjutnya klik **Next**.
+
+![install-07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-07.PNG)
+
+8. Checklist pada pilihan **Use bundle openSSH** selanjutnya klik **Next**.
+
+![install-08](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-08.PNG)
+
+9. Checklist pada pilihan **Uses the OpenSSL Library** selanjutnya klik **Next**.
+
+![install-09](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-09.PNG)
+
+10. Selanjutnya checklist pada pilihan **Checkout Windows-style, commit Unix-style...**, lalu klik **Next**.
+
+![install-10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-10.PNG)
+
+
+11. Selanjutnya checklist pada pilihan **Use MinTTY...**, lalu klik **Next**.
+
+![install-11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-11.PNG)
+
+
+12. Selanjutnya checklist pada pilihan **Default....**, lalu klik **Next**.
+
+![install-12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-12.PNG)
+
+
+13. Selanjutnya checklist pada pilihan **Git Credential Manager**, lalu klik **Next**.
+
+![install-13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-13.PNG)
+
+
+14. Selanjutnya checklist pada pilihan **Enable file System chacing**, lalu klik **Next**.
+
+![install-14](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-14.PNG)
+
+15. Konfigurasi experimental options lalu checklist pada pilihan **Enable experimental support for pseudo console**
+
+![install-15](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-15.PNG)
+
+16. Tunggu hingga proses installasi selesai
+
+![install-16](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-16.PNG)
+
+17. Klik **Finish**
+
+![install-17](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-17.PNG)
+
+18. Ketikkan **git bash** di fitur kolom pencarian windows kalian
+
+![install-18](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-18.PNG)
+
+19. Lalu ketikkan **pwd** di git bash
+
+![install-19](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-19.PNG)
+
+20. Tampilan untuk Git Gui
+
+![install-20](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-20.PNG)
+
+21. Cek versi git menggunakan cmd dengan mengetikkan kode **git --version**
+
+![install-21](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bd3e5bf13548a3f263314789ecf4449eb21cf29f/minggu-01/install-21.PNG)
+
+# 02 konfigurasi git di windows
+Konfigurasi Git pada windows dapat dilakukan dengan cara mengetikkan kode dibawah ini
+```
+$ git config --global user.name "(sesuai username pada git)"
+$ git config --global user.email sesuai email yang digunakan pada git
+```
+![konfig1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture14.png)
+
+Selanjutnya jika kalian ingin melihat hasil dari konfigurasi diatas maka kalian dapat mengetikkan code berikut
+```
+$ git config --lists
+```
+![konfig2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture15.png)
+
+Langkah ini cukup dilakukan sekali saja, kecuali jika anda ingin melakukan perubahan nama ataupun email yang sudah digunakan.
+
+
+# 03. Membuat Repo Di Account Git Kita
+  Untuk membuat repo, dapat menggunakan langkah-langkah berikut :
+  1.  Klik tanda **+** pada bagian atas dekat profil Git, lalu pilih **New repository**
+  
+  ![repo1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture16.png)
+  
+  2. Isikan nama owner, nama repo, keterangan, pilih settingan repo untuk private atau public, checklist untuk add README.md atau tidak, serta pilih lisensi.
+
+  ![repo2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture17.png)
+  
+  3. Klik **Create Repository**
+  Setelah langkah tersebut berhasil, maka repo akan dibuat dan bisa diakses dengan menggunakan pola ```https://github.com/username/reponame```. Pada repo tersebut, hanya akan muncul 1 file, yaitu LICENSE. Jika kalian memilih membuat README pada saat langkah ke 2, juga akan muncul file README.md.
+
+  ![repo3](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture18.png)
+
+   Ada atau tidaknya README.md tidak ada efek apapun di langkah ini.
+ 
+ # Clone Repo
+Untuk clone repo, kalian dapat mengetikkan code dibawah,
+
+```git clone https://github.com/UserName/NameRepository```
+
+![clone](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture19.png)
+
+Sehingga hasil clonenya akan masuk ke penyimpanan lokal komputer kita.
+
+![clone2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture20.png)
+
 # Mengelola Repo
-  Setelah ```clone``` ke komputer lokal, semua manipulasi konten dilakukan di komputer lokal dan hasilnya akan di-*push* ke remote repo di GitHub. Dengan demikian, jangan berganti-ganti remote lokal, sekali dibuat disitu, tetap berada disitu. Jika kehilangan repo lokal, clone ulang ke direktori yang bersih (kosong) setelah itu baru lakukan pengelolaan repo. Beberapa hal yang biasanya dilakukan akan diuraikan berikut ini.
+  Setelah melakukan ```clone``` ke penyimpanan lokal komputer kita, semua manipulasi konten dilakukan di komputer lokal dan hasilnya akan di-**push** ke remote repo di GitHub. Dengan demikian, jangan ganti-ganti remote lokal sekalinya dibuat disitu, tetap disitu. Jika kehilangan repo lokal, maka anda harus melakukan clone ulang ke direktori yang kosong setelah itu baru melakukan pengelolaan repo. Beberapa hal yang biasanya dilakukan seperti berikut ini.
+
 # Mengubah Isi - Push Tanpa Branching dan Merging
 Perubahan isi bisa terjadi karena satu atau kombinasi beberapa hal berikut:
   1. File dihapus
   2. File diedit
   3. Membuat file / direktori baru
   4. Menghapus direktori
+
 Untuk kasus-kasus tersebut, lakukan perubahan di komputer lokal, setelah itu push ke repo. 
-![clone1](https://user-images.githubusercontent.com/114986359/224526726-74a01da9-4abc-4e50-b274-91efc88e94ee.png)
-![push](https://user-images.githubusercontent.com/114986359/224527291-e9e7465a-d102-430d-9b1b-d2e8f74d266d.png)
-# Source Code : [git-single.txt](https://github.com/Afifa9/tekn-cloud-computing/files/10950243/git-single.txt)
+
+![isi](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture21.png)
+
+# Mengubah Isi dengan Branching and Merging
+Dengan menggunakan cara ini, setiap kali akan melakukan perubahan, perubahan itu dilakukan di komputer lokal dengan membuat suatu *cabang* yang nantinya digunakan untuk menampung perubahan tersebut. Setelah itu, cabang itu yang akan dikirim ke repo GitHub untuk diminta review kemudian digabungkan (```merge```) ke master. Secara umum, repo yang dibuat biasanya sudah mempunyai satu branch yang disebut dengan ```master```. Cara ini lebih aman, terstruktur, dan mempunyai history yang lebih baik. Jika perubahan yang kita buat sudah kacau dan kita menyesal, maka ada cara untuk "membersihkan" repo lokal kita. Secara umum, langkahnya adalah sebagai berikut :
+
+   1. Buat branch untuk menampung perubahan-perubahan
+   2. Lakukan perubahan-perubahan
+   3. Add dan commit perubahan-perubahan tersebut ke branch
+   4. Kembali ke repo master
+   5. Buat pull request di GitHub
+   6. Merge pull request di GitHub
+   7. Merge branch untuk menampung perubahan-perubahan tersebut ke master.
+   8. Selesai.
+
+![isi1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture22.png)
+
+Setelah itu, klik *compare & pull request*, selanjutnya kita bisa langsung merge :
+
+![pull](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture23.png)
+
+Setelah itu, ```Confirm Merge```, branch yang kita kirimkan tadi sudah dimasukkan ke branch ```master```. Setelah itu, merge di komputer lokal kita :
+
+![merge1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture24.png)
+
+# Sinkronisasi
+Suatu saat, bisa saja terjadi kita menggunakan komputer lain dan mengedit repo melalui repo lokal di komputer lain, setelah itu pindah ke kamputer lain lagi. Saat itu, kita perlu melakukan sinkronisasi ke kemputer lokal. Perintah untuk sinkronisasi adalah:
+
+```
+$ git pull
+```
+
+![pull5](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture25.png)
+
+Perintah ini dikerjakan di direktori tempat repo lokal kita berada.
+
+# Membatalkan Perubahan
+Praktik yang baik adalah membuat *branch* pada saat kita akan melakukan perubahan-perubahan. Jika perubahan-perubahan yang kita lakukan sudah sedemikian kacaunya, maka kita bisa membuat supaya perubahan-perubahan yang kacau tersebut hilang dan kembali ke kondisi bersih seperti semula.
+
+![batal1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture26.png)
+
+
+# Undo Commit Terakhir
+Suatu saat, mungkin kita sudah terlanjur mem-*push* perubahan ke repo GitHub, setelah itu kita baru menyadari bahwa perubahan tersebut salah. Untuk itu, kita bisa melakukan ```git revert```.
+
+![batal2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture27.png)
+
+![undo1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture28.png)
+
+
+Selanjutnya, tinggal di-*push* ke repo GitHub.
+
+![undo2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture29.png)
+
+
+
+Untuk kembali ke perubahan pada saat yang sudah lama, yang perlu dilakukan adalah melakukan ```git revert <posisi>``` kemudian mengedit secara manual kemudian push ke repo.
+
+![undo3](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture30.png)
+
+![revert1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture31.png)
+
+![revert2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture32.png)
+
+![revert3](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture33.png)
+
+![revert4](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture34.png)
