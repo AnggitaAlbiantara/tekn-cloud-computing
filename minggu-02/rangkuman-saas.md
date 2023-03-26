@@ -1,3 +1,4 @@
+[ [<< Kembali](README.md) ]
 ## 01. What’s the difference between IaaS, SaaS, and PaaS?
 Pertama, mari kita lihat beberapa contoh dan layanan dari layanan cloud ini.
 
@@ -96,12 +97,21 @@ Dengan Python, MongoDB – sebagai database berorientasi dokumen yang hebat, Rab
 
 Source : https://usersnap.com/blog/cloud-based-saas-architecture-fundamentals/
 
-#### 2. Carilah 2 layanan SaaS, cari juga software desktop / non cloud yang mempunyai fungsionalitas sama dengan layanan SaaS tersebut.
-##### jawaban
-layanan SaaS :
- - Canva
- - Dropbox
+## 2. Carilah 2 layanan SaaS, cari juga software desktop / non cloud yang mempunyai fungsionalitas sama dengan layanan SaaS tersebut.
+Layanan SaaS :
+ - [LucidChart](https://www.lucidchart.com/pages/)
+ ![06](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/lucidchart2.PNG)
+ ![05](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/lucidchart.PNG)
  
-software desktop :
- - Docs
- - Spreadsheet
+ - [SmartDraw](https://www.smartdraw.com/)
+ ![08](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/smartdraw2.PNG)
+ ![07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/smartdraw.PNG)
+ 
+Layanan Saas Non-Cloud atau Software Desktop :
+ - [ClickCharts](https://www.nchsoftware.com/chart/index.html)
+ ![07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/clickcharts2.PNG)
+ ![07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/clickcharts.PNG)
+ 
+ - [GitMind](https://gitmind.com/)
+![07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/gitmind2.PNG)
+![07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/gitmind.PNG)
