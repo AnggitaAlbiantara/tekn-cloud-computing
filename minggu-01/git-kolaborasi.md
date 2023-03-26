@@ -43,8 +43,8 @@ Sebelum melakukan perubahan, pastikan:
   5. Setelah itu, buka halaman Web dari repo kontributor https://github.com/AnggitaAlbiantara/tekn-cloud-computing-1. Pada halaman tersebut akan ditampilkan isi yang kita push.
   ![gmb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab6.PNG)
   6. Pilih ```Compare and pull request```, kemudian isikan deskripsi PR dan klik pada ```Create pull request```:
-  ![gmb11](![gmb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab7.PNG))
+  ![gmb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab7.PNG)
   7. Pada repo upstream author, muncul angka 1 (artinya jumlahnya 1) pada Pull requests di bagian atas.
   8. Upstream author bisa menyetujui setelah melakukan review: klik pada Pull requests, akan muncul PR dengan message seperti yang ditulis oleh kontributor (Add: contributor). Klik pada PR tersebut, review kemudian klik Merge pull request diikuti dengan Confirm merge. Setelah itu, status akan berubah menjadi   Merged.
   9. Sinkronkan semua repo (lokal maupun GitHub kontributor)
-  ![gmb12](![gmb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab8.PNG))
+  ![gmb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab8.PNG)
