@@ -24,9 +24,6 @@ khusus dengan bentuk, simbol, gaya konektor garis, dan lainnya. Semua diagram al
  ![07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/clickcharts.PNG)
  
 2. [GitMind](https://gitmind.com/) =
-GitMind, pembuat peta pikiran online gratis. Perangkat lunak ini tidak hanya dapat digunakan untuk membuat peta pikiran, tetapi juga dalam curah pendapat kelompok, pemikiran kreatif, perencanaan acara, pencatatan, pembelajaran kolaboratif dan lain-lain. Semua dapat dilakukan dengan satu peta.
-
-Ini berbasis web yang artinya portabel di berbagai platform, termasuk Microsoft Windows, Linux, macOS, serta iOS dan Android. Ini menyediakan peta seimbang, bagan log, 
-bagan pohon, bagan organisasi dan bagan tulang ikan untuk opsi tata letak. Itu dapat mengekspor peta pikiran ke format PNG, JPG, PDF, TXT dan SVG. (Source : https://id.wikipedia.org/wiki/GitMind)
+GitMind, pembuat peta pikiran online gratis. Perangkat lunak ini tidak hanya dapat digunakan untuk membuat peta pikiran, tetapi juga dalam curah pendapat kelompok, pemikiran kreatif, perencanaan acara, pencatatan, pembelajaran kolaboratif dan lain-lain. Semua dapat dilakukan dengan satu peta. Ini berbasis web yang artinya portabel di berbagai platform, termasuk Microsoft Windows, Linux, macOS, serta iOS dan Android. Ini menyediakan peta seimbang, bagan log, bagan pohon, bagan organisasi dan bagan tulang ikan untuk opsi tata letak. Itu dapat mengekspor peta pikiran ke format PNG, JPG, PDF, TXT dan SVG. (Source : https://id.wikipedia.org/wiki/GitMind)
 ![07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/gitmind2.PNG)
 ![07](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/eefbafd285a6f0167d9f78b78fafe54d53553b35/minggu-02/gitmind.PNG)
