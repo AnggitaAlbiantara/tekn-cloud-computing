@@ -1,3 +1,4 @@
+[ [<< Kembali](README.md) ]
 # 04 Kolaborasi
 # FORK
   Fork adalah membuat clone dari suatu repo di GitHub milik upstream author, diletakkan ke milik kontributor. Fork hanya dilakukan sekali saja. Pada dasarnya, proses untuk fork ini meliputi:
@@ -15,6 +16,7 @@
 Setelah proses tersebut, clone di komputer lokal:
 
 ![gmb04](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/clone.PNG)
+
 Setelah itu, konfigurasikan repo lokal kontributor. Pada kondisi saat ini, di komputer lokal sudah terdapat repo playground-1 yang berada pada direktori dengan nama yang sama. Untuk keperluan berkontribusi, ada 2 nama repo yang harus diatur:
    - origin: menunjuk ke repo milik kontributor di GitHub, hasil dari fork.
    - upstream: menunjuk ke repo milik upstream author (repo asli) di account Afifa9.
@@ -35,13 +37,18 @@ Sebelum melakukan perubahan, pastikan:
   1. Sudah ada koordinasi secara manual tentang perubahan-perubahan yang akan dilakukan.
   2. Setelah melakukan perubahan-perubahan, pastikan bahwa isi repo lokal tersinkronisasi dengan repo dari upstream author.
   3. Cara melakukan sinkronisasi:
+  
   ![gmb6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab2.PNG)
+  
   4. Lakukan perubahan-perubahan, setelah itu push ke origin (milik kontributor)
   ![gmb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab3.PNG)
   ![gmb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab4.PNG)
   ![gmb9](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab5.PNG)
+  
   5. Setelah itu, buka halaman Web dari repo kontributor https://github.com/AnggitaAlbiantara/tekn-cloud-computing-1. Pada halaman tersebut akan ditampilkan isi yang kita push.
+  
   ![gmb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab6.PNG)
+  
   6. Pilih ```Compare and pull request```, kemudian isikan deskripsi PR dan klik pada ```Create pull request```:
   ![gmb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab7.PNG)
   7. Pada repo upstream author, muncul angka 1 (artinya jumlahnya 1) pada Pull requests di bagian atas.
