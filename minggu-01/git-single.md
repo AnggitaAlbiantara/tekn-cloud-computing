@@ -176,7 +176,13 @@ Setelah itu, klik *compare & pull request*, selanjutnya kita bisa langsung merge
 
 Setelah itu, ```Confirm Merge```, branch yang kita kirimkan tadi sudah dimasukkan ke branch ```master```. Setelah itu, merge di komputer lokal kita :
 
-![merge1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/Pull.PNG)
+![merge1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/merge1.PNG)
+
+![merge2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/merge2.PNG)
+
+![merge3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/merge3.PNG)
+
+![merge4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/merge4.PNG)
 
 # Sinkronisasi
 Suatu saat, bisa saja terjadi kita menggunakan komputer lain dan mengedit repo melalui repo lokal di komputer lain, setelah itu pindah ke kamputer lain lagi. Saat itu, kita perlu melakukan sinkronisasi ke kemputer lokal. Perintah untuk sinkronisasi adalah:
@@ -185,38 +191,35 @@ Suatu saat, bisa saja terjadi kita menggunakan komputer lain dan mengedit repo m
 $ git pull
 ```
 
-![pull5](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture25.png)
+![pull5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/merge4.PNG)
 
 Perintah ini dikerjakan di direktori tempat repo lokal kita berada.
 
 # Membatalkan Perubahan
 Praktik yang baik adalah membuat *branch* pada saat kita akan melakukan perubahan-perubahan. Jika perubahan-perubahan yang kita lakukan sudah sedemikian kacaunya, maka kita bisa membuat supaya perubahan-perubahan yang kacau tersebut hilang dan kembali ke kondisi bersih seperti semula.
 
-![batal1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture26.png)
+![batal1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/dd5bac3fc4d8c267f04cf2440e03b91d570eb4f6/minggu-01/all%20redme%202.PNG)
+![batal2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/dd5bac3fc4d8c267f04cf2440e03b91d570eb4f6/minggu-01/all%20redme%202_1.PNG)
 
 
 # Undo Commit Terakhir
 Suatu saat, mungkin kita sudah terlanjur mem-*push* perubahan ke repo GitHub, setelah itu kita baru menyadari bahwa perubahan tersebut salah. Untuk itu, kita bisa melakukan ```git revert```.
 
-![batal2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture27.png)
+![batal3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/dd5bac3fc4d8c267f04cf2440e03b91d570eb4f6/minggu-01/undo.PNG)
 
-![undo1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture28.png)
+![undo1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/dd5bac3fc4d8c267f04cf2440e03b91d570eb4f6/minggu-01/undo2.PNG)
 
 
 Selanjutnya, tinggal di-*push* ke repo GitHub.
 
-![undo2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture29.png)
+![undo2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/dd5bac3fc4d8c267f04cf2440e03b91d570eb4f6/minggu-01/undo4.PNG)
 
 
 
 Untuk kembali ke perubahan pada saat yang sudah lama, yang perlu dilakukan adalah melakukan ```git revert <posisi>``` kemudian mengedit secara manual kemudian push ke repo.
 
-![undo3](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture30.png)
+![undo3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ed056e600dd146cc3beaf28db011dd17ccfd6bf2/minggu-01/undo5.PNG)
 
-![revert1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture31.png)
+![revert1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ed056e600dd146cc3beaf28db011dd17ccfd6bf2/minggu-01/revert.PNG)
 
-![revert2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture32.png)
-
-![revert3](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture33.png)
-
-![revert4](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture34.png)
+![revert2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ed056e600dd146cc3beaf28db011dd17ccfd6bf2/minggu-01/revert2.PNG)
