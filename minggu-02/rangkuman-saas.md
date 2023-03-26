@@ -81,6 +81,8 @@ Source : https://hackernoon.com/saas-software-as-a-service-platform-architecture
 
   ### Kompatibilitas
   Dengan instalasi perangkat lunak tradisional, pembaruan dan tambalan terkadang membutuhkan banyak waktu dan uang. Ini terutama berlaku di perusahaan.
+
+Source : https://www.devteam.space/blog/saas-software-as-a-service-platform-architecture/
  
  ## 04. How to build a cloud-based SaaS Application.
  SaaS business adalah industri yang berkembang sangat cepat yang menarik semakin banyak orang dan perusahaan. Organisasi-organisasi ini semakin banyak aplikasi mengambang di cloud. Penskalaan di cloud juga memiliki beberapa manfaat dan risiko penting.
@@ -92,7 +94,7 @@ Membangun produk untuk cloud berarti membangun produk dengan bahasa pemrograman 
 ### Kesimpulan cara membangun cloud-based SaaS Application.
 Dengan Python, MongoDB – sebagai database berorientasi dokumen yang hebat, RabbitMQ dari segi perangkat lunak pengaturan dasar dilakukan. Namun, ada lebih banyak cara untuk dipikirkan.
 
-Source : https://www.devteam.space/blog/saas-software-as-a-service-platform-architecture/
+Source : https://usersnap.com/blog/cloud-based-saas-architecture-fundamentals/
 
 #### 2. Carilah 2 layanan SaaS, cari juga software desktop / non cloud yang mempunyai fungsionalitas sama dengan layanan SaaS tersebut.
 ##### jawaban
