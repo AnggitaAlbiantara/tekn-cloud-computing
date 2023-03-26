@@ -132,11 +132,11 @@ Untuk clone repo, kalian dapat mengetikkan code dibawah,
 
 ```git clone https://github.com/UserName/NameRepository```
 
-![clone](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture19.png)
+![clone](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/clone.PNG)
 
 Sehingga hasil clonenya akan masuk ke penyimpanan lokal komputer kita.
 
-![clone2](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture20.png)
+![clone2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/hasil-clone.PNG)
 
 # Mengelola Repo
   Setelah melakukan ```clone``` ke penyimpanan lokal komputer kita, semua manipulasi konten dilakukan di komputer lokal dan hasilnya akan di-**push** ke remote repo di GitHub. Dengan demikian, jangan ganti-ganti remote lokal sekalinya dibuat disitu, tetap disitu. Jika kehilangan repo lokal, maka anda harus melakukan clone ulang ke direktori yang kosong setelah itu baru melakukan pengelolaan repo. Beberapa hal yang biasanya dilakukan seperti berikut ini.
