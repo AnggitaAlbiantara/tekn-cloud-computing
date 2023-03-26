@@ -166,15 +166,17 @@ Dengan menggunakan cara ini, setiap kali akan melakukan perubahan, perubahan itu
    7. Merge branch untuk menampung perubahan-perubahan tersebut ke master.
    8. Selesai.
 
-![isi1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture22.png)
+![isi4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/mengubah-isi-3.PNG)
+![isi5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/mengubah-isi-4_1.PNG)
+![isi6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/mengubah-isi-4.PNG)
 
 Setelah itu, klik *compare & pull request*, selanjutnya kita bisa langsung merge :
 
-![pull](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture23.png)
+![pull](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83111631a3df7d7e2a9f650173c0b9ffbad03086/minggu-01/hasil%20authorized.PNG)
 
 Setelah itu, ```Confirm Merge```, branch yang kita kirimkan tadi sudah dimasukkan ke branch ```master```. Setelah itu, merge di komputer lokal kita :
 
-![merge1](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture24.png)
+![merge1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/66b2e04d9a2c15656bad7d4fe5edafa0842b3c7c/minggu-01/Pull.PNG)
 
 # Sinkronisasi
 Suatu saat, bisa saja terjadi kita menggunakan komputer lain dan mengedit repo melalui repo lokal di komputer lain, setelah itu pindah ke kamputer lain lagi. Saat itu, kita perlu melakukan sinkronisasi ke kemputer lokal. Perintah untuk sinkronisasi adalah:
