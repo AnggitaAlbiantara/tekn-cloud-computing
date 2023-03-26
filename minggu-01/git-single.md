@@ -150,7 +150,9 @@ Perubahan isi bisa terjadi karena satu atau kombinasi beberapa hal berikut:
 
 Untuk kasus-kasus tersebut, lakukan perubahan di komputer lokal, setelah itu push ke repo. 
 
-![isi](https://github.com/AnggerFNS/tekn-cloud-computing/blob/master/minggu-01/Picture21.png)
+![isi1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/mengubah-isi-1.PNG)
+![isi2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/221220ef20b65de0b5cb321e1002f8c340765aa9/minggu-01/mengubah-isi-2.PNG)
+![isi3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/2fb28fd02f93d5cf84f661695376ee49c94db50c/minggu-01/push.PNG)
 
 # Mengubah Isi dengan Branching and Merging
 Dengan menggunakan cara ini, setiap kali akan melakukan perubahan, perubahan itu dilakukan di komputer lokal dengan membuat suatu *cabang* yang nantinya digunakan untuk menampung perubahan tersebut. Setelah itu, cabang itu yang akan dikirim ke repo GitHub untuk diminta review kemudian digabungkan (```merge```) ke master. Secara umum, repo yang dibuat biasanya sudah mempunyai satu branch yang disebut dengan ```master```. Cara ini lebih aman, terstruktur, dan mempunyai history yang lebih baik. Jika perubahan yang kita buat sudah kacau dan kita menyesal, maka ada cara untuk "membersihkan" repo lokal kita. Secara umum, langkahnya adalah sebagai berikut :
