@@ -23,7 +23,7 @@ Setelah itu, konfigurasikan repo lokal kontributor. Pada kondisi saat ini, di ko
 Repo origin sudah dituliskan konfigurasinya pada saat melakukan proses clone dari repo kontributor. Konfigurasi repo upstream harus dibuat dan Tambahkan remote upstream, Hasil:
 ![gmb05](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ee6b7ab962cbe83a9c02fa9d0364b52089cb1150/minggu-01/kolab1.PNG)
 
-# Mengirimkan Pull Request
+## Mengirimkan Pull Request
 Setiap kali melakukan perubahan, kirim perubahan tersebut. Pengiriman ini disebut dengan Pull Request. Pada posisi ini, kontributor bisa mengirimkan kontribusi dengan cara mengirimkan pull request (PR) ke upstream author. Secara umum, langkah-langkahnya adalah sebagai berikut:
   1. Kontributor akan bekerja di repo lokal (create, update, delete isi)
   2. Commit
@@ -32,7 +32,7 @@ Setiap kali melakukan perubahan, kirim perubahan tersebut. Pengiriman ini disebu
   5. Upstream author me-review dan kemudian menyetujui (merge) ke master atau menolak PR.
   6. Jika disetujui dan di-merge ke repo master dari upstream author, sinkronkan repo di komputer lokal dan repo GitHub kontributor.
 Berikut ini adalah contoh pengiriman perubahan isi README.md dengan menambahkan kontributor.
-# Membuat Perubahan di Repo Lokal
+## Membuat Perubahan di Repo Lokal
 Sebelum melakukan perubahan, pastikan:
   1. Sudah ada koordinasi secara manual tentang perubahan-perubahan yang akan dilakukan.
   2. Setelah melakukan perubahan-perubahan, pastikan bahwa isi repo lokal tersinkronisasi dengan repo dari upstream author.
