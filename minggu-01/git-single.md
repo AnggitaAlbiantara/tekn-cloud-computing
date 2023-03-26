@@ -1,3 +1,5 @@
+[ [<< Kembali](README.md) ]
+
 # Instalasi Git Pada Windows
 
 Sebelum kita menginstall Git di windows, kita wajib memiliki teks editor. Bisa menggunakan [Notepad++](https://notepad-plus-plus.org/) atau [Visual Studion Code](https://code.visualstudio.com/) atau [Vim](https://www.vim.org/).
