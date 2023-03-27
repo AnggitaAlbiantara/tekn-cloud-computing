@@ -28,5 +28,10 @@
 
 ![gb4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/de5ace3118e365493dd9605d80901d4a703d3f51/minggu-03/tug10.PNG)
 
+8. Lalu klik menu **OpenApp** di pojok kanan atas
 
+![gb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/44143ff33015e5c5ed306117c63939e51c999782/minggu-03/tug11.PNG)
 
+9. Hasil dari deploy code diatas, seperti gambar dibawah ini
+
+![gb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/de5ace3118e365493dd9605d80901d4a703d3f51/minggu-03/tug12.PNG)
