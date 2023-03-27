@@ -1,1 +1,10 @@
-
+[ [<<Kembali](README.md) ]
+![gb1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug1.PNG)
+![gb2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug2.PNG)
+![gb3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug3.PNG)
+![gb4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug4.PNG)
+![gb5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug5.PNG)
+![gb6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug6.PNG)
+![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug7.PNG)
+![gb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug8.PNG)
+![gb9](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6a22f97c283822748d860f7ad068116e13faafdd/minggu-03/tug8_1.PNG)
