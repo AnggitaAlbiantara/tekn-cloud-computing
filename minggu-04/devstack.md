@@ -1,4 +1,4 @@
-[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/ac8862185f3ee378a4cbf8e0d5d4609b49b0834a/minggu-04/README.md)
+[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/05b259494b79562304b3ddeaedf8e4cc05a2b424/minggu-04/README.md)
 # Penerapan OpenStack di Ubuntu 22.04 dengan DevStack
 ## Langkah 1: Perbarui Sistem Ubuntu
 - Open terminal Ubuntu, lalu ketikkan kode dibawah ini
