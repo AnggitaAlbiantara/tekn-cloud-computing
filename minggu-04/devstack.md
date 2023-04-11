@@ -24,30 +24,10 @@
 ![gb6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/71cb033ab94603a9a94044a0c178d5512238dad9/minggu-04/9.PNG)
 
 - Buat file local.conf lalu isikan 4 password dan alamat ip Host dengan menambahkan kode seperti gambar dibawah ini
-![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/71cb033ab94603a9a94044a0c178d5512238dad9/minggu-04/10.PNG)
-![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/71cb033ab94603a9a94044a0c178d5512238dad9/minggu-04/11.PNG)
+![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4d4461df84a3de032efef909bc049a898d8b21a4/minggu-04/10.PNG)
 
-## Langkah 4: Mulai Penerapan OpenStack di Ubuntu 22.04 dengan DevStack
-- Setelah proses konfigurasi berhasil, selanjutnya yaitu melakukan penginstallan OpenStack dengan mengetikkan kode berikut
-![gb8]()
-- Diakhir proses installasi, jika berhasil menghasilkan output seperti gambar dibawah ini, maka proses installasi telah berhasil
-![gb9]()
+![gb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4d4461df84a3de032efef909bc049a898d8b21a4/minggu-04/11.PNG)
 
-## Langkah 5: Akses Dashboard OpenStack
-- Salin URL Horizon yang dihasilkan pada hasil installasi lalu tempelkan ke browser web
-![gb10]()
-- Gunakkan user default **demo atau admin** dan password yang dikonfigurasi untuk login
-![gb11]()
-- Browser akan menampilkan konsol Web Manajemen Openstack setelah login
-![gb12]()
-- Jika ingin menggunakan Openstack untuk mengelola DevStack gunakanlah perintah terminal linux, lalu ketikkan source openrc di terminal linux
-![gb13]()
-Setelah itu kita bisa menambahkan suatu gambar instans ke glance untuk digunakan saat membuat Mesin Virtual dengan Nova
-- Menambahkan Gambar Uji Cirros, lalu download Gambar Virtual dengan mengetikkan kode berikut: wget http://download.cirros-cloud.net/0.5.2/cirros-0.5.2-x86_64-disk.img
-![gb14]()
-- Lalu upload ke Glance dengan mengetikkan kode berikut:
-![gb15]()
-- Lalu konfirmasi apabila gambar berhasil terupload
-![gb16]()
-- Jika berhasil, maka gambar akan terlihat di browser
-![gb17]()
+- Mohon maaf, disini ubuntu tempat saya mengalami kegagalan install, untuk permasalahannya saya belum mendalami lagi
+![gb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/bb438799ab14e4d8e58d543b3a5c2b57b5123dc2/minggu-04/14.jpg)
+
