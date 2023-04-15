@@ -11,7 +11,7 @@
 ![gb3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/3.PNG)
 
 ## Langkah 2: Download Apache Ofbiz
-- Download Apache Ofbiz dengan mengetikkan kode berikut di terminal ubuntu: *wget https://dlcdn.apache.org/ofbiz/apache-ofbiz-18.12.07.zip*
+- Download Apache Ofbiz dengan mengetikkan kode **wget https://dlcdn.apache.org/ofbiz/apache-ofbiz-18.12.07.zip**
 ![gb4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/4.PNG)
 
 - Extract folder zip yang didownload tadi dengan mengetikkan kode seperti gambar dibawah ini
