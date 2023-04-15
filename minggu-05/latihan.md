@@ -1,4 +1,4 @@
-[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/963529b99a0549e4270c3fe87a0b1320463058fb/minggu-05/README.md)
+[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c307fd50f6006d0e1c9b9f737596525c583309a6/minggu-05/README.md)
 # Install Apache Ofbiz
 ## Langkah 1: Install Java
 - Open terminal Ubuntu, lalu ketikkan kode berikut: *sudo apt install openjdk-8-jdk openjdk-8-jre*
