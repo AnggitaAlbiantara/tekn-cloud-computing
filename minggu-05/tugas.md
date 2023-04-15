@@ -1,3 +1,4 @@
+[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/963529b99a0549e4270c3fe87a0b1320463058fb/minggu-05/README.md)
 ## Menggunakan fasilitas demo yang tersedia di Apache Ofbiz, disini saya memilih Accounting.
 - Mengaktifkan server Apache Ofbiz di terminal linux dengan mengetikkan kode berikut
 ![gb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/10.PNG)
