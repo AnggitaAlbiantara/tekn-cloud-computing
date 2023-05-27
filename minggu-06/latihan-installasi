@@ -1,8 +1,8 @@
 [ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c307fd50f6006d0e1c9b9f737596525c583309a6/minggu-05/README.md)
-# Install Apache Ofbiz
-## Langkah 1: Install Java
-- Open terminal Ubuntu, lalu ketikkan kode berikut: *sudo apt install openjdk-8-jdk openjdk-8-jre*
-![gb1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/1.PNG)
+# Install Go, MySQL, dan MongoDB
+## Install Go
+- Download installer Go di [web ini](https://go.dev/doc/install)
+
 
 - Verifikasi Java, apakah berhasil terinstal atau tidak, dengan mengetikkan kode berikut: *java -version*
 ![gb2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/2.PNG)
