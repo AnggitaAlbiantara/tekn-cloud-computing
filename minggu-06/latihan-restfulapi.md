@@ -1,5 +1,5 @@
 [ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/README.md)
-# Program Go: koneksi dan membaca data dari MySQL dan MongoDB
+# Gin RESTful API membaca data dari MySQL dan MongoDB
 ## MySQL
 1. Buat direktori baru dengan nama mysql-restfulapi, kemudian instal module dan driver yang diperlukan.
 
