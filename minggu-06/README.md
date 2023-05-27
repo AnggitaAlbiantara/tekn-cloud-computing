@@ -6,4 +6,4 @@
 3. [Latihan1-restfulapi](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/39caceaaaef1e95276efc6301aa2b739790c31d2/minggu-06/latihan-restfulapi.md)
 
 ## Tugas
-5. [Tugas]()
+1. [Tugas]()
