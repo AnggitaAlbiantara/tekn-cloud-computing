@@ -1,41 +1,32 @@
-[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c307fd50f6006d0e1c9b9f737596525c583309a6/minggu-05/README.md)
+[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/README.md)
 # Install Go, MySQL, dan MongoDB
 ## Install Go
 - Download installer Go di [web ini](https://go.dev/doc/install)
 
+![gb1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/ins_go_1.PNG)
 
-- Verifikasi Java, apakah berhasil terinstal atau tidak, dengan mengetikkan kode berikut: *java -version*
-![gb2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/2.PNG)
+- Tunggu hingga proses installasi selesai
 
-- Konfigurasi Java Home dan Jre Home dengan mengetikkan perintah seperti gambar dibawah ini 
-![gb3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/3.PNG)
+![gb2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/ins_go_2.PNG)
 
-## Langkah 2: Download Apache Ofbiz
-- Download Apache Ofbiz dengan mengetikkan kode **wget https://dlcdn.apache.org/ofbiz/apache-ofbiz-18.12.07.zip**
-![gb4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/4.PNG)
+- Setelah finish cek versi Go dengan mengtikkan kode "go version" di cmd
 
-- Extract folder zip yang didownload tadi dengan mengetikkan kode seperti gambar dibawah ini
-![gb5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/5.PNG)
-![gb6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/6.PNG)
+![gb3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/ins_go_3.PNG)
 
-## Langkah 3: Install Apache Ofbiz pada terminal linux
-- Jalankan perintah dibawah ini untuk menginstall Apache Ofbiz
-![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/7.PNG)
+## Install MySQL
+- Download XAMPP di [web ini](https://www.apachefriends.org/download.html), lalu install dan tunggu hingga proses installasi selesai
 
-- Membersihkan sistem dan muat ulang data Apache OFBiz lengkap dengan menggunakan perintah gradlew berikut:
-![gb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/8.PNG)
+![gb4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/ins_mysql_1.PNG)
 
-## Langkah 4: Muat Data Demo di Apache Ofbiz
-- Melakukan muat data Demo di Apache Ofbiz dengan mengetikkan kode berikut:
-![gb9](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/9.PNG)
+- Setelah finish cek versi MySQL dengan mengetikkan kode seperti gambar dibawah ini
 
-## Langkah 5: Memulai Layanan Apache Ofbiz 
-- Memulai Layanan Apache Ofbiz dengan mengetikkan kode berikut:
-![gb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/10.PNG)
+![gb5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/ins_mysql_2.PNG)
 
-## Langkah 6: Mengakses Server Apache Ofbiz di Browser
-- Mengakses server Apache Ofbiz di browser dengan mengetikkan url localhost:8443/accounting/control/main di browser, lalu masukkan nama pengguna **admin**, password **ofbiz**:
-![gb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/12.PNG)
+## Install MongoDB
+- Download installasi MongoDB di [web ini](https://www.mongodb.com/try/download/community), lalu open dan tunggu hingga proses installasi selesai
 
-- Apabila berhasil maka akan mengeluarkan output seperti gambar dibawah ini:
-![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/745761c333ddc9b567b8c3aa4cb862c75f77bd12/minggu-05/13.PNG)
+![gb6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/ins_mongo_1.PNG)
+
+- Setelah finish cek versi MongoDB dengan mengetikkan kode seperti gambar dibawah ini
+
+![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/ins_mongo_2.PNG)
