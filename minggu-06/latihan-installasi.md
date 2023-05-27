@@ -1,4 +1,4 @@
-[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c648cf4577e4158371cab5e417dd777b70455ee1/minggu-06/README.md)
+[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/cacfb4cb73b8ab7a22b41988dfc2729b22831a7b/minggu-06/README.md)
 # Install Go, MySQL, dan MongoDB
 ## Install Go
 - Download installer Go di [web ini](https://go.dev/doc/install)
