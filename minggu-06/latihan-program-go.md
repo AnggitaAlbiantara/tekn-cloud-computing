@@ -1,4 +1,4 @@
-[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/cacfb4cb73b8ab7a22b41988dfc2729b22831a7b/minggu-06/README.md)
+[ [<<Kembali] ](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/2943e95f0e0572ecd1be1cb465190bddc631a8e1/minggu-06/README.md)
 # Program Go: koneksi dan membaca data dari MySQL dan MongoDB
 ## MySQL
 1. Buat direktori baru dengan nama tesgo, kemudian instal module dan driver yang diperlukan.
