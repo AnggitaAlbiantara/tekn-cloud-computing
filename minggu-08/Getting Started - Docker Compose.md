@@ -30,6 +30,7 @@ You don’t need to install Python or Redis, as both are provided by Docker imag
 ![gb5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/54575accb6f57d3f6fef78d6b17e02ec563c4cc1/minggu-08/Lat%205.PNG)<br>
 
 2. Finally, the files in your project directory will be like this. <br>
+![gb19](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/095bb6997c3a2362e8b927039717126c05fe046e/minggu-08/Lat%2019.PNG)<br>
 
 ## Step 4: Build and run your app with Compose<br>
 
