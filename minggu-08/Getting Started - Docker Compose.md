@@ -67,22 +67,18 @@ You don’t need to install Python or Redis, as both are provided by Docker imag
 
 1. Because the application code is now mounted into the container using a volume, you can make changes to its code and see the changes instantly, without having to rebuild the image. Change the greeting in app.py and save it. For example, change the Hello World! message to Hello from Docker!.<br>
 ![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/54575accb6f57d3f6fef78d6b17e02ec563c4cc1/minggu-08/Lat%2013.PNG)<br>
+![gb14](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/54575accb6f57d3f6fef78d6b17e02ec563c4cc1/minggu-08/Lat%2014.PNG)<br>
 
 ## Step 8: Experiment with some other commands
 
 1. If you want to run your services in the background, you can pass the -d flag (for “detached” mode) to docker compose up and use docker compose ps to see what is currently running. <br>
-
-![gb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/54575accb6f57d3f6fef78d6b17e02ec563c4cc1/minggu-08/Lat%2010.PNG)<br>
+![gb15](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/54575accb6f57d3f6fef78d6b17e02ec563c4cc1/minggu-08/Lat%2015.PNG)<br>
 
 2. The docker compose run command allows you to run one-off commands for your services. For example, to see what environment variables are available to the web service. <br>
-
-<div align="center"><img src="gambar/latihan/get-started/Screenshot(13).jpg"></div><br>
+![gb16](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/54575accb6f57d3f6fef78d6b17e02ec563c4cc1/minggu-08/Lat%2016.PNG)<br>
 
 3. If you started Compose with docker compose up -d, stop your services once you’ve finished with them. <br>
-
-<div align="center"><img src="gambar/latihan/get-started/Screenshot(14).jpg"></div><br>
-<div align="center"><img src="gambar/latihan/get-started/Screenshot(15).jpg"></div><br>
+![gb17](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/54575accb6f57d3f6fef78d6b17e02ec563c4cc1/minggu-08/Lat%2017.PNG)<br>
 
 4. You can bring everything down, removing the containers entirely, with the down command. Pass --volumes to also remove the data volume used by the Redis container. <br>
-
-<div align="center"><img src="gambar/latihan/get-started/Screenshot(16).jpg"></div>
+![gb18](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/54575accb6f57d3f6fef78d6b17e02ec563c4cc1/minggu-08/Lat%2018.PNG)<br>
