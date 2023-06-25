@@ -100,38 +100,47 @@ If for some reason you cannot open a session from a web broswer, you can connect
 ## Section #3 - Overlay Networking
 
 ### Step 1: The Basics
-In this step you’ll initialize a new Swarm, join a single worker node, and verify the operations worked. Run ```docker swarm init --advertise-addr $(hostname -i)```. In the first terminal copy the entire ```docker swarm join ...``` command that is displayed as part of the output from your terminal output. Then, paste the copied command into the second terminal. Run a docker node ls to verify that both nodes are part of the Swarm.
-<div><img src="gambar/SS16.png"></div><br>
+In this step you’ll initialize a new Swarm, join a single worker node, and verify the operations worked. Run ```docker swarm init --advertise-addr $(hostname -i)```. In the first terminal copy the entire ```docker swarm join ...``` command that is displayed as part of the output from your terminal output. Then, paste the copied command into the second terminal.<br>
+![gb22](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/22.PNG)<br>
+
+Run a docker node ls to verify that both nodes are part of the Swarm.<br>
+![gb23](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/23.PNG)<br>
+The ID and HOSTNAME values may be different in your lab. The important thing to check is that both nodes have joined the Swarm and are ready and active.
 
 ### Step 2: Create an overlay network
-Now that you have a Swarm initialized it’s time to create an overlay network. Create a new overlay network called “overnet” by running ```docker network create -d overlay overnet```. Use the ```docker network ls``` command to verify the network was created successfully. Run the same ```docker network ls``` command from the second terminal.
-<div><img src="gambar/SS17.png"></div><br>
+Now that you have a Swarm initialized it’s time to create an overlay network. Create a new overlay network called “overnet” by running ```docker network create -d overlay overnet```.<br>
+![gb24](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/24.PNG)<br>
+
+Use the ```docker network ls``` command to verify the network was created successfully.<br>
+![gb25](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/25.PNG)<br>
+
+Run the same ```docker network ls``` command from the second terminal.<br>
+![gb26](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/26.PNG)<br>
 
 Notice that the “overnet” network does not appear in the list. This is because Docker only extends overlay networks to hosts when they are needed. This is usually when a host runs a task from a service that is created on the network. We will see this shortly.
-
-Use the ```docker network inspect <network>``` command to view more detailed information about the “overnet” network. You will need to run this command from the first terminal.
-<div><img src="gambar/SS18.png"></div><br>
+Use the ```docker network inspect <network>``` command to view more detailed information about the “overnet” network. You will need to run this command from the first terminal.<br>
+![gb27](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/27.PNG)<br>
 
 ### Step 3: Create a service
 Now that we have a Swarm initialized and an overlay network, it’s time to create a service that uses the network.
 
-Execute the following command from the first terminal to create a new service called myservice on the overnet network with two tasks/replicas.
+Execute the following command from the first terminal to create a new service called myservice on the overnet network with two tasks/replicas.<br>
+![gb28](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/28.PNG)<br>
 
-```
-docker service create --name myservice \
---network overnet \
---replicas 2 \
-ubuntu sleep infinity
-```
+Verify that the service is created and both replicas are up by running ```docker service ls```.<br>
+![gb29](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/29.PNG)<br>
 
-Verify that the service is created and both replicas are up by running ```docker service ls```.
-<div><img src="gambar/SS19.png"></div><br>
+The ```2/2``` in the ```REPLICAS``` column shows that both tasks in the service are up and running. Verify that a single task (replica) is running on each of the two nodes in the Swarm by running ```docker service ps myservice```.<br>
+![gb30](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/30.PNG)<br>
 
-The ```2/2``` in the ```REPLICAS``` column shows that both tasks in the service are up and running. Verify that a single task (replica) is running on each of the two nodes in the Swarm by running ```docker service ps myservice```.
-<div><img src="gambar/SS20.png"></div><br>
+The ID and NODE values might be different in your output. The important thing to note is that each task/replica is running on a different node.
 
-We can also run ```docker network inspect overnet``` on the second terminal to get more detailed information about the “overnet” network and obtain the IP address of the task running on the second terminal.
-<div><img src="gambar/SS21.png"></div><br>
+Now that the second node is running a task on the “overnet” network it will be able to see the “overnet” network. Lets run docker network ls from the second terminal to verify this.<br>
+![gb31](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/31.PNG)<br>
+
+We can also run ```docker network inspect overnet``` on the second terminal to get more detailed information about the “overnet” network and obtain the IP address of the task running on the second terminal.<br>
+![gb32](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/32.PNG)<br>
+You should note that as of Docker 1.12, docker network inspect only shows containers/tasks running on the local node. This means that 10.0.0.3 is the IPv4 address of the container running on the second node. Make a note of this IP address for the next step (the IP address in your lab might be different than the one shown here in the lab guide).
 
 ### Step 4: Test the network
 To complete this step you will need the IP address of the service task. Execute the following commands, ```docker network inspect overnet```. Notice that the IP address listed for the service task (container) running on the first node is different to the IP address for the service task running on the second node. Note also that they are on the same “overnet” network.
