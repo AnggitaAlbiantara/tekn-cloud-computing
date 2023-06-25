@@ -1,32 +1,29 @@
 # Docker Networking Hands-on Lab
 
-Laporan beserta gambar dibawah ini adalah hasil praktikum melalui [Docker Networking Hands-on Lab](https://training.play-with-docker.com/docker-networking-hol/), sehingga untuk materi dan penjelasan lebih detailnya dapat diakses melalui web tersebut.
-
-### Task
-
-- [Section #1 - Networking Basics](https://github.com/isaanggi/tekn-cloud-computing/blob/main/minggu-10/docker-networking.md#section-1---networking-basics)
-- [Section #2 - Bridge Networking](https://github.com/isaanggi/tekn-cloud-computing/blob/main/minggu-10/docker-networking.md#section-2---bridge-networking)
-- [Section #3 - Overlay Networking](https://github.com/isaanggi/tekn-cloud-computing/blob/main/minggu-10/docker-networking.md#section-3---overlay-networking)
-- [Cleaning Up](https://github.com/isaanggi/tekn-cloud-computing/blob/main/minggu-10/docker-networking.md#cleaning-up)
-
 ## Section #1 - Networking Basics
 
 ### Step 1: The Docker Network Command
-The ```docker network``` command is the main command for configuring and managing container networks. Run the ```docker network``` command from the first terminal.
-<div><img src="gambar/SS1.png"></div>
-<div><img src="gambar/SS2.png"></div>
+The ```docker network``` command is the main command for configuring and managing container networks. Run the ```docker network``` command from the first terminal.<br>
+![gb1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/1.PNG)<br>
+The command output shows how to use the command as well as all of the docker network sub-commands. As you can see from the output, the docker network command allows you to create new networks, list existing networks, inspect networks, and remove networks. It also allows you to connect and disconnect containers from networks.
 
 ### Step 2: List networks
-Run a ```docker network ls``` command to view existing container networks on the current Docker host.
-<div><img src="gambar/SS3.png"></div><br>
+Run a ```docker network ls``` command to view existing container networks on the current Docker host.<br>
+![gb2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/2.PNG)<br>
+The output above shows the container networks that are created as part of a standard installation of Docker.
+New networks that you create will also show up in the output of the docker network ls command.
+You can see that each network gets a unique ID and NAME. Each network is also associated with a single driver. Notice that the “bridge” network and the “host” network have the same name as their respective drivers.
 
 ### Step 3: Inspect a network
 The ```docker network inspect``` command is used to view network configuration details. Use ```docker network inspect <network>``` to view configuration details of the container networks on your Docker host. The command below shows the details of the network called ```bridge```.
-<div><img src="gambar/SS4.png"></div><br>
+![gb3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/3.PNG)<br>
+![gb3-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/3-1.PNG)<br>
+![gb3-2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/3-2.PNG)<br>
 
 ### Step 4: List network driver plugins
-The ```docker info``` command shows a lot of interesting information about a Docker installation. Run the ```docker info``` command and locate the list of network plugins.
-<div><img src="gambar/SS5.png"></div><br>
+The ```docker info``` command shows a lot of interesting information about a Docker installation. Run the ```docker info``` command and locate the list of network plugins.<br>
+![gb4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/4.PNG)<br>
+The output above shows the bridge, host,macvlan, null, and overlay drivers
 
 ## Section #2 - Bridge Networking
 
