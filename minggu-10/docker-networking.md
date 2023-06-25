@@ -143,28 +143,53 @@ We can also run ```docker network inspect overnet``` on the second terminal to g
 You should note that as of Docker 1.12, docker network inspect only shows containers/tasks running on the local node. This means that 10.0.0.3 is the IPv4 address of the container running on the second node. Make a note of this IP address for the next step (the IP address in your lab might be different than the one shown here in the lab guide).
 
 ### Step 4: Test the network
-To complete this step you will need the IP address of the service task. Execute the following commands, ```docker network inspect overnet```. Notice that the IP address listed for the service task (container) running on the first node is different to the IP address for the service task running on the second node. Note also that they are on the same “overnet” network.
-<div><img src="gambar/SS22.png"></div><br>
+To complete this step you will need the IP address of the service task running on node2 that you saw in the previous step (10.0.0.3). Execute the following commands from the first terminal.<br>
+![gb33](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/33.PNG)<br>
 
-Run a ```docker ps``` command to get the ID of the service task so that you can log in to it in the next step. Log on to the service task. Be sure to use the container ```ID``` from your environment as it will be different from the example shown below. We can do this by running ```docker exec -it <CONTAINER ID> /bin/bash```. Install the ping command and ping the service task running on the both node.
-<div><img src="gambar/SS23.png"></div><br>
-<div><img src="gambar/SS24.png"></div><br>
+Notice that the IP address listed for the service task (container) running is different to the IP address for the service task running on the second node. Note also that they are on the same “overnet” network.
+Run a docker ps command to get the ID of the service task so that you can log in to it in the next step.<br>
+![gb34](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/34.PNG)<br>
+
+Log on to the service task. Be sure to use the container ID from your environment as it will be different from the example shown below. We can do this by running docker exec -it <CONTAINER ID> /bin/bash. Install the ping command and ping the service task running on the second node where it had a IP address of 10.0.0.3 from the docker network inspect overnet command.<br>
+![gb35](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/35.PNG)<br>
+
+Now, lets ping 10.0.0.3.<br>
+![gb36](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/36.PNG)<br>
 The output above shows that both tasks from the myservice service are on the same overlay network spanning both nodes and that they can use this network to communicate.
 
 ### Step 5: Test service discovery
 
-Run ```cat /etc/resolv.conf``` form inside of the container. The value that we are interested in is the ```nameserver 127.0.0.11```. This value sends all DNS queries from the container to an embedded DNS resolver running inside the container listening on ```127.0.0.11:53```. All Docker container run an embedded DNS server at this address. Try and ping the “myservice” name from within the container by running ```ping -c5 myservice```.
-<div><img src="gambar/SS25.png"></div><br>
+Now that you have a working service using an overlay network, let’s test service discovery.
+If you are not still inside of the container, log back into it with the docker exec -it <CONTAINER ID> /bin/bash command.
+Run cat /etc/resolv.conf form inside of the container.<br>
+![gb37](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/37.PNG)<br>
+The value that we are interested in is the nameserver 127.0.0.11. This value sends all DNS queries from the container to an embedded DNS resolver running inside the container listening on 127.0.0.11:53. All Docker container run an embedded DNS server at this address.
 
-Type the ```exit``` command to leave the ```exec``` container session and return to the shell prompt of your Docker host. Inspect the configuration of the “myservice” service by running ```docker service inspect myservice```. Lets verify that the VIP value matches the value returned by the previous ```ping -c5 myservice``` command.
-<div><img src="gambar/SS26.png"></div><br>
+Try and ping the “myservice” name from within the container by running ping -c5 myservice.<br>
+![gb38](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/38.PNG)<br>
+
+The output clearly shows that the container can ping the myservice service by name. Notice that the IP address returned is 10.0.0.2. In the next few steps we’ll verify that this address is the virtual IP (VIP) assigned to the myservice service.
+Type the exit command to leave the exec container session and return to the shell prompt of your Docker host. Inspect the configuration of the “myservice” service by running docker service inspect myservice. Lets verify that the VIP value matches the value returned by the previous ping -c5 myservice command.<br>
+![gb39](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/39.PNG)<br>
+Towards the bottom of the output you will see the VIP of the service listed. The VIP in the output above is 10.0.0.2 but the value may be different in your setup. The important point to note is that the VIP listed here matches the value returned by the ping -c5 myservice command.
+Feel free to create a new docker exec session to the service task (container) running on node2 and perform the same ping -c5 service command. You will get a response form the same VIP.
 
 ## Cleaning Up
-Execute the ```docker service rm myservice``` command to remove the service called myservice. Execute the ```docker ps``` command to get a list of running containers. You can use the ```docker kill <CONTAINER ID ...>``` command to kill the ubuntu and nginx containers we started at the beginning.
-<div><img src="gambar/SS27.png"></div><br>
+Hopefully you were able to learn a little about how Docker Networking works during this lab. Lets clean up the service we created, the containers we started, and finally disable Swarm mode.
+Execute the docker service rm myservice command to remove the service called myservice.<br>
+![gb40](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/40.PNG)<br>
 
-Finally, lets remove node1 and node2 from the Swarm. We can use the ```docker swarm leave --force``` command to do that.
-<div><img src="gambar/SS28.png"></div>
-<div><img src="gambar/SS29.png"></div>
+Execute the docker ps command to get a list of running containers.<br>
+![gb41](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/41.PNG)<br>
+
+You can use the docker kill <CONTAINER ID ...> command to kill the ubunut and nginx containers we started at the beginning.<br>
+![gb42](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/42.PNG)<br>
+
+Finally, lets remove node1 and node2 from the Swarm. We can use the docker swarm leave --force command to do that.
+Lets run docker swarm leave --force on node1.<br>
+![gb43](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/43.PNG)<br>
+
+Lets also run docker swarm leave --force on node2.<br>
+![gb44](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/44.PNG)<br>
 
 Congratulations! You’ve completed this lab!
