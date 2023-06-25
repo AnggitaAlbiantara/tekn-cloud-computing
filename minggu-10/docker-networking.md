@@ -64,21 +64,38 @@ Ping the IP address of the container from the shell prompt of your Docker host b
 ![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/13.PNG)<br>
 
 The replies above show that the Docker host can ping the container over the bridge network. But, we can also verify the container can connect to the outside world too. Lets log into the container, install the ```ping program```, and then ping ```www.github.com```.
+First, we need to get the ID of the container started in the previous step. You can run ``docker ps`` to get that. 
+![gb14](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/14.PNG)<br>
 
-First, we need to get the ID of the container started in the previous step. You can run ``docker ps`` to get that. Next, lets run a shell inside that ubuntu container, by running ```docker exec -it <CONTAINER ID> /bin/bash```. Next, we need to install the ping program. So, lets run ```apt-get update && apt-get install -y iputils-ping```.<br>
-![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/13.PNG)<br>
+Next, lets run a shell inside that ubuntu container, by running ```docker exec -it <CONTAINER ID> /bin/bash```.<br>
+![gb15](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/15.PNG)<br>
 
-Lets ping ```www.github.com``` by running ```ping -c5 www.github.com```. Finally, lets disconnect our shell from the container, by running ```exit```. We should also stop this container so we clean things up from this test, by running ```docker stop <CONTAINER ID>```.
-<div><img src="gambar/SS13.png"></div><br>
+Next, we need to install the ping program. So, lets run ```apt-get update && apt-get install -y iputils-ping```.<br>
+![gb16](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/16.PNG)<br>
+
+Lets ping ```www.github.com``` by running ```ping -c5 www.github.com```.<br>
+![gb17](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/17.PNG)<br>
+
+Finally, lets disconnect our shell from the container, by running ```exit```.<br>
+![gb18](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/18.PNG)<br>
+We should also stop this container so we clean things up from this test, by running ```docker stop <CONTAINER ID>```.<br>
+This shows that the new container can ping the internet and therefore has a valid and working network configuration.
 
 ### Step 4: Configure NAT for external connectivity
-In this step we’ll start a new NGINX container and map port 8080 on the Docker host to port 80 inside of the container. This means that traffic that hits the Docker host on port 8080 will be passed on to port 80 inside the container.
+In this step we’ll start a new NGINX container and map port 8080 on the Docker host to port 80 inside of the container. This means that traffic that hits the Docker host on port 8080 will be passed on to port 80 inside the container.<br>
+Start a new container based off the official NGINX image by running ```docker run --name web1 -d -p 8080:80 nginx```.<br>
+![gb19](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/19.PNG)<br>
 
-Start a new container based off the official NGINX image by running ```docker run --name web1 -d -p 8080:80 nginx```. Review the container status and port mappings by running ```docker ps```.
-<div><img src="gambar/SS14.png"></div><br>
+Review the container status and port mappings by running ```docker ps```.<br>
+![gb20](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/20.PNG)<br>
+The top line shows the new web1 container running NGINX. Take note of the command the container is running as well as the port mapping - 0.0.0.0:8080->80/tcp maps port 8080 on all host interfaces to port 80 inside the web1 container. This port mapping is what effectively makes the containers web service accessible from external sources (via the Docker hosts IP address on port 8080).
 
-If for some reason you cannot open a session from a web broswer, you can connect from your Docker host using the ```curl 127.0.0.1:8080``` command.
-<div><img src="gambar/SS15.png"></div><br>
+Now that the container is running and mapped to a port on a host interface you can test connectivity to the NGINX web server.
+
+To complete the following task you will need the IP address of your Docker host. This will need to be an IP address that you can reach (e.g. your lab is hosted in Azure so this will be the instance’s Public IP - the one you SSH’d into). Just point your web browser to the IP and port 8080 of your Docker host. Also, if you try connecting to the same IP address on a different port number it will fail.
+
+If for some reason you cannot open a session from a web broswer, you can connect from your Docker host using the curl 127.0.0.1:8080 command.<br>
+![gb21](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/21.PNG)<br>
 
 ## Section #3 - Overlay Networking
 
