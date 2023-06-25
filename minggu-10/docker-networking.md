@@ -29,30 +29,44 @@ The output above shows the bridge, host,macvlan, null, and overlay drivers
 
 ### Step 1: The Basics
 Every clean installation of Docker comes with a pre-built network called bridge. Verify this with the docker ```network ls```.
-<div><img src="gambar/SS6.png"></div><br>
+![gb5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/5.PNG)<br>
+The output above shows that the bridge network is associated with the bridge driver. It’s important to note that the network and the driver are connected, but they are not the same. In this example the network and the driver have the same name - but they are not the same thing!<br>
 
-Install the ```brctl``` command and use it to list the Linux bridges on your Docker host. You can do this by running ```sudo apt-get install bridge-utils```.
-<div><img src="gambar/SS7.png"></div><br>
+The output above also shows that the bridge network is scoped locally. This means that the network only exists on this Docker host. This is true of all networks using the bridge driver - the bridge driver provides single-host networking.
+All networks created with the bridge driver are based on a Linux bridge (a.k.a. a virtual switch).<br>
 
-Then, list the bridges on your Docker host, by running ```brctl show```. You can also use the ```ip a``` command to view details of the docker0 bridge.
+Install the brctl command and use it to list the Linux bridges on your Docker host. You can do this by running sudo apt-get install bridge-utils.<br>
+![gb6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/6.PNG)<br>
+Then, list the bridges on your Docker host, by running brctl show.<br>
+![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/7.PNG)<br>
 
-<div><img src="gambar/SS8.png"></div><br>
+The output above shows a single Linux bridge called docker0. This is the bridge that was automatically created for the bridge network. You can see that it has no interfaces currently connected to it.
+You can also use the ip a command to view details of the docker0 bridge.<br>
+![gb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/8.PNG)<br>
 
 ### Step 2: Connect a container
 The bridge network is the default network for new containers. This means that unless you specify a different network, all new containers will be connected to the bridge network. Create a new container by running ```docker run -dt ubuntu sleep infinity```. This command will create a new container based on the ```ubuntu:latest``` image and will run the ```sleep``` command to keep the container running in the background. You can verify our example container is up by running ```docker ps```.
-<div><img src="gambar/SS9.png"></div><br>
+![gb9](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/9.PNG)<br>
 
-As no network was specified on the ```docker run``` command, the container will be added to the bridge network. Run the ```brctl show``` command again. Notice how the docker0 bridge now has an interface connected. This interface connects the docker0 bridge to the new container just created. You can inspect the bridge network again, by running ```docker network inspect bridge```, to see the new container attached to it.
-<div><img src="gambar/SS10.png"></div><br>
+This command will create a new container based on the ubuntu:latest image and will run the sleep command to keep the container running in the background. You can verify our example container is up by running docker ps.<br>
+![gb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/10.PNG)<br>
+
+As no network was specified on the ```docker run``` command, the container will be added to the bridge network. Run the ```brctl show``` command again.<br>
+![gb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/11.PNG)<br>
+
+Notice how the docker0 bridge now has an interface connected. This interface connects the docker0 bridge to the new container just created. You can inspect the bridge network again, by running ```docker network inspect bridge```, to see the new container attached to it.<br>
+![gb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/12.PNG)<br>
+![gb12-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/12-1.PNG)<br>
 
 ### Step 3: Test network connectivity
-Ping the IP address of the container from the shell prompt of your Docker host by running ```ping -c5 <IPv4 Address>```. Remember to use the IP of the container in your environment.
-<div><img src="gambar/SS11.png"></div><br>
+The output to the previous docker network inspect command shows the IP address of the new container. In the previous example it is “172.17.0.2” but yours might be different.
+Ping the IP address of the container from the shell prompt of your Docker host by running ping -c5 <IPv4 Address>. Remember to use the IP of the container in your environment.<br>
+![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/13.PNG)<br>
 
 The replies above show that the Docker host can ping the container over the bridge network. But, we can also verify the container can connect to the outside world too. Lets log into the container, install the ```ping program```, and then ping ```www.github.com```.
 
-First, we need to get the ID of the container started in the previous step. You can run ``docker ps`` to get that. Next, lets run a shell inside that ubuntu container, by running ```docker exec -it <CONTAINER ID> /bin/bash```. Next, we need to install the ping program. So, lets run ```apt-get update && apt-get install -y iputils-ping```.
-<div><img src="gambar/SS12.png"></div><br>
+First, we need to get the ID of the container started in the previous step. You can run ``docker ps`` to get that. Next, lets run a shell inside that ubuntu container, by running ```docker exec -it <CONTAINER ID> /bin/bash```. Next, we need to install the ping program. So, lets run ```apt-get update && apt-get install -y iputils-ping```.<br>
+![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/218dc073d7fae120bab0336082c637638dbfb60a/minggu-10/13.PNG)<br>
 
 Lets ping ```www.github.com``` by running ```ping -c5 www.github.com```. Finally, lets disconnect our shell from the container, by running ```exit```. We should also stop this container so we clean things up from this test, by running ```docker stop <CONTAINER ID>```.
 <div><img src="gambar/SS13.png"></div><br>
