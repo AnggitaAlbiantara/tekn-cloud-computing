@@ -251,7 +251,7 @@ Verify that the changes made locally do not reflect in the running service by re
 ![gb46](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/46.PNG)<br>
 ![gb46-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c2f2ec77685a6ab7c9a306713d63ae7ad874dbbb/minggu-11/46-1.png)
 
-Now, shut these services down and get ready for the next step:
+Now, shut these services down and get ready for the next step:<br>
 ![gb47](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/47.PNG)<br>
 
 We have successfully orchestrated three microservices to compose our Link Extractor application. We now have an application stack that represents the architecture illustrated in the figure shown in the introduction of this tutorial. In the next step we will explore how easy it is to swap components from an application with the microservice architecture.
