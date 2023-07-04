@@ -207,49 +207,52 @@ In the next step we will add one more service to our stack and will build a self
 
 ## Step 5: Redis Service for Caching
 
-Checkout the ```step5``` branch and list files in it.
+Checkout the ```step5``` branch and list files in it.<br>
+![gb38](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/38.PNG)<br>
+Some noticeable changes from the previous step are as following:
+- Another ```Dockerfile``` is added in the ```./www``` folder for the PHP web application to build a self-contained image and avoid live file mounting
+- A Redis container is added for caching using the official Redis Docker image
+- The API service talks to the Redis service to avoid downloading and parsing pages that were already scraped before
+- A ```REDIS_URL``` environment variable is added to the API service to allow it to connect to the Redis cache
 
-<div><img src="gambar/ss33.png"></div>
+Let’s first inspect the newly added ```Dockerfile``` under the ```./www``` folder:<br>
+![gb39](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/39.PNG)
 
-Let’s first inspect the newly added ```Dockerfile``` under the ```./www``` folder:
+This is a rather simple ```Dockerfile``` that uses the official ```php:7-apache``` image as the base and copies all the files from the ```./www``` folder into the ```/var/www/html/``` folder of the image. This is exactly what was happening in the previous step, but that was bind mounted using a volume, while here we are making the code part of the self-contained image. We have also added the ```API_ENDPOINT``` environment variable here with a default value, which implicitly suggests that this is an important information that needs to be present in order for the service to function properly (and should be customized at run time with an appropriate value).
 
-<div><img src="gambar/ss34.png"></div>
+Next, we will look at the API server’s ```api/main.py``` file where we are utilizing the Redis cache:<br>
+The file has many lines, but the important bits are as illustrated below:<br>
+![gb40](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/40.PNG)
 
-Next, we will look at the API server’s ```api/main.py``` file where we are utilizing the Redis cache:
+This time the API service needs to know how to connect to the Redis instance as it is going to use it for caching. This information can be made available at run time using the ```REDIS_URL``` environment variable. A corresponding ```ENV``` entry is also added in the ```Dockerfile``` of the API service with a default value.
 
-<div><img src="gambar/ss35.png"></div>
+A ```redis``` client instance is created using the hostname ```redis``` (same as the name of the service as we will see later) and the default Redis port ```6379```. We are first trying to see if a cache is present in the Redis store for a given URL, if not then we use the ```extract_links``` function as before and populate the cache for future attempts.
 
-Now, let’s look into the updated ```docker-compose.yml``` file:
+Now, let’s look into the updated ```docker-compose.yml``` file:<br>
+![gb41](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/41.PNG)
 
-<div><img src="gambar/ss36.png"></div>
+The ```api``` service configuration largely remains the same as before, except the updated image tag and added environment variable ```REDIS_URL``` that points to the Redis service. For the ```web``` service, we are using the custom ```linkextractor-web:step5-php``` image that will be built using the newly added ```Dockerfile``` in the ```./www``` folder. We are no longer mounting the ```./www``` folder using the ```volumes``` config. Finally, a new service named ```redis``` is added that will use the official image from DockerHub and needs no specific configurations for now. This service is accessible to the Python API using its service name, the same way the API service is accessible to the PHP front-end service.
 
-Let’s boot these services up:
+Let’s boot these services up:<br>
+![gb42](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/42.PNG)
 
-<div><img src="gambar/ss37.png"></div>
+Now, that all three services are up, access the web interface by [clicking the Link Extractor](https://training.play-with-docker.com/). There should be no visual difference from the previous step. However, if you extract links from a page with a lot of links, the first time it should take longer, but the successive attempts to the same page should return the response fairly quickly. To check whether or not the Redis service is being utilized, we can use ```docker-compose exec``` followed by the ```redis``` service name and the Redis CLI’s [monitor](https://redis.io/commands/monitor) command:<br>
+![gb43](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/43.PNG)
 
-Now, that all three services are up, access the web interface by [clicking the Link Extractor](https://training.play-with-docker.com/). There should be no visual difference from the previous step. However, if you extract links from a page with a lot of links, the first time it should take longer, but the successive attempts to the same page should return the response fairly quickly. To check whether or not the Redis service is being utilized, we can use ```docker-compose exec``` followed by the ```redis``` service name and the Redis CLI’s [monitor](https://redis.io/commands/monitor) command:
+Now, try to extract links from some web pages using the web interface and see the difference in Redis log entries for pages that are scraped the first time and those that are repeated. Before continuing further with the tutorial, stop the interactive ```monitor``` stream as a result of the above ```redis-cli``` command by pressing ```Ctrl + C``` keys while the interactive terminal is in focus.<br>
+![gb44-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c2f2ec77685a6ab7c9a306713d63ae7ad874dbbb/minggu-11/44-1.png)<br>
+![gb44-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c2f2ec77685a6ab7c9a306713d63ae7ad874dbbb/minggu-11/44-1.png)
 
-<div><img src="gambar/ss38.png"></div>
+Now that we are not mounting the ```/www``` folder inside the container, local changes should not reflect in the running service:<br>
+![gb45](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/45.PNG)<br>
+![gb45-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c2f2ec77685a6ab7c9a306713d63ae7ad874dbbb/minggu-11/45-1.png)
 
-Now, try to extract links from some web pages using the web interface and see the difference in Redis log entries for pages that are scraped the first time and those that are repeated. 
-
-<div><img src="gambar/ss39.png"></div>
-<div><img src="gambar/ss40.png"></div>
-<div><img src="gambar/ss41.png"></div>
-
-Before continuing further with the tutorial, stop the interactive ```monitor``` stream as a result of the above ```redis-cli``` command by pressing ```Ctrl + C``` keys while the interactive terminal is in focus. Now that we are not mounting the ```/www``` folder inside the container, local changes should not reflect in the running service:
-
-<div><img src="gambar/ss42.png"></div>
-
-Verify that the changes made locally do not reflect in the running service by reloading the web interface and then revert changes:
-
-<div><img src="gambar/ss43.png"></div>
-<div><img src="gambar/ss44.png"></div>
-<div><img src="gambar/ss45.png"></div>
+Verify that the changes made locally do not reflect in the running service by reloading the web interface and then revert changes:<br>
+![gb46](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/46.PNG)<br>
+![gb46-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c2f2ec77685a6ab7c9a306713d63ae7ad874dbbb/minggu-11/46-1.png)
 
 Now, shut these services down and get ready for the next step:
-
-<div><img src="gambar/ss46.png"></div>
+![gb47](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/47.PNG)<br>
 
 We have successfully orchestrated three microservices to compose our Link Extractor application. We now have an application stack that represents the architecture illustrated in the figure shown in the introduction of this tutorial. In the next step we will explore how easy it is to swap components from an application with the microservice architecture.
 
