@@ -1,7 +1,5 @@
 # Docker Orchestration Hands-on Lab
 
-Laporan beserta gambar dibawah ini adalah hasil praktikum melalui [Docker Orchestration Hands-on Lab](https://training.play-with-docker.com/orchestration-hol/), sehingga untuk materi dan penjelasan lebih detailnya dapat diakses melalui web tersebut.
-
 ### Steps
 
 - [Section #1 - What is Orchestration](https://github.com/isaanggi/tekn-cloud-computing/new/main/minggu-12#section-1-what-is-orchestration)
@@ -21,17 +19,41 @@ But, with Orchestration tooling, you can typically off-load much of this manual 
 
 If you are typically only using ```docker run``` to deploy your applications, then you could likely really benefit from using Docker Compose, Docker Swarm mode, or both Docker Compose and Swarm.
 
-<div><img src="gambar/ss1.jpg"></div>
-
 ## Section 2: Configure Swarm Mode
+Real-world applications are typically deployed across multiple hosts as discussed earlier. This improves application performance and availability, as well as allowing individual application components to scale independently. Docker has powerful native tools to help you do this.
 
-<div><img src="gambar/ss2.jpg"></div>
-<div><img src="gambar/ss3.jpg"></div>
+An example of running things manually and on a single host would be to create a new container on <strong>node1</strong> by running ```docker run -dt ubuntu sleep infinity```.<br>
+![gb1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/1.PNG)
+
+This command will create a new container based on the ```ubuntu:latest``` image and will run the ```sleep``` command to keep the container running in the background. You can verify our example container is up by running ```docker ps``` on <strong>node1</strong>.
+![gb2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/2.PNG)
+
+But, this is only on a single node. What happens if this node goes down? Well, our application just dies and it is never restarted. To restore service, we would have to manually log into this machine, and start tweaking things to get it back up and running. So, it would be helpful if we had some type of system that would allow us to run this “sleep” application/service across many machines.
+
+In this section you will configure *Swarm Mode*. This is a new optional mode in which multiple Docker hosts form a self-orchestrating group of engines called a *swarm*. Swarm mode enables new features such as *services* and *bundles* that help you deploy and manage multi-container apps across multiple Docker hosts.
+
+You will complete the following:
+- Configure Swarm mode
+- Run the app
+- Scale the app
+- Drain nodes for maintenance and reschedule containers
+
+For the remainder of this lab we will refer to *Docker native clustering* as *<strong>Swarm mode</strong>*. The collection of Docker engines configured for Swarm mode will be referred to as the *swarm*.
+
+A swarm comprises one or more *Manager Nodes* and one or more *Worker Nodes*. The manager nodes maintain the state of swarm and schedule application containers. The worker nodes run the application containers. As of Docker 1.12, no external backend, or 3rd party components, are required for a fully functioning swarm - everything is built-in!
+
+In this part of the demo you will use all three of the nodes in your lab. <strong>node1</strong> will be the Swarm manager, while <strong>node2</strong> and <strong>node3</strong> will be worker nodes. Swarm mode supports highly available redundant manager nodes, but for the purposes of this lab you will only deploy a single manager node.
 
 ### Step 2.1 - Create a Manager node
+In this step you’ll initialize a new Swarm, join a single worker node, and verify the operations worked.
 
-<div><img src="gambar/ss4.jpg"></div>
-<div><img src="gambar/ss5.jpg"></div>
+Run ```docker swarm init``` on <strong>node1</strong>.<br>
+![gb3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/3.PNG)
+
+You can run the ```docker info``` command to verify that <strong>node1</strong> was successfully configured as a swarm manager node.<br>
+![gb4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/4.PNG)
+
+The swarm is now initialized with <strong>node1</strong> as the only Manager node. In the next section you will add <strong>node2</strong> and <strong>node3</strong> as *Worker nodes*.
 
 ### Step 2.2 - Join Worker nodes to the Swarm
 
