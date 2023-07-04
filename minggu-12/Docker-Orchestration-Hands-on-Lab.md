@@ -154,12 +154,23 @@ Lastly, check the service again on <strong>node1</strong> to make sure that the 
 ![gb21](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/21.PNG)
 
 ## Cleaning Up
+Execute the ```docker service rm sleep-app``` command on <strong>node1</strong> to remove the service called *myservice*.<br>
+![gb22](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/22.PNG)
 
-<div><img src="gambar/ss21.jpg"></div>
-<div><img src="gambar/ss22.jpg"></div>
-<div><img src="gambar/ss23.jpg"></div>
-<div><img src="gambar/ss24.jpg"></div>
-<div><img src="gambar/ss25.jpg"></div>
-<div><img src="gambar/ss26.jpg"></div>
+Execute the ```docker ps``` command on <strong>node1</strong> to get a list of running containers.<br>
+![gb23](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/23.PNG)
+
+You can use the ```docker kill <CONTAINER ID>``` command on <strong>node1</strong> to kill the sleep container we started at the beginning.<br>
+![gb24](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/24.PNG)
+
+Finally, let’s remove node1, node2, and node3 from the Swarm. We can use the ```docker swarm leave --force``` command to do that.
+Lets run ```docker swarm leave --force``` on <strong>node1</strong>.<br>
+![gb25](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/25.PNG)
+
+Then, run ```docker swarm leave --force``` on <strong>node2</strong>.<br>
+![gb26](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/26.PNG)
+
+Finally, ```run docker swarm leave --force``` on <strong>node3</strong>.<br>
+![gb27](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/27.PNG)
 
 Congratulations! You’ve completed this lab. You now know how to build a swarm, deploy applications as collections of services, and scale individual services up and down.
