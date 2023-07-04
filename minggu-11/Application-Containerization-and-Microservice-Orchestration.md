@@ -76,25 +76,30 @@ This looks good, but we can improve the output. For example, some links are rela
 
 ## Step 2: Link Extractor Module with Full URI and Anchor Text
 
-Checkout the step2 branch and list files in it.
+Checkout the step2 branch and list files in it.<br>
+![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/13.PNG)
 
-<div><img src="gambar/ss9.png"></div>
+In this step the ```linkextractor.py``` script is updated with the following functional changes. 
+- Paths are normalized to full URLs
+- Reporting both links and anchor texts
+- Usable as a module in other scripts
 
-In this step the ```linkextractor.py``` script is updated with the following functional changes. Let’s have a look at the updated script.
+Let’s have a look at the updated script.<br>
+![gb14](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/14.PNG)
 
-<div><img src="gambar/ss10.png"></div>
+The link extraction logic is abstracted into a function ```extract_links``` that accepts a URL as a parameter and returns a list of objects containing anchor texts and normalized hyperlinks. This functionality can now be imported into other scripts as a module (which we will utilize in the next step).<br>
 
-Let’s have a look at the updated script. We have used a new tag ```linkextractor:step2``` for this image so that we don’t overwrite the image from the ```step1``` to illustrate that they can co-exist and containers can be run using either of these images.
+Now, let’s build a new image and see these changes in effect:
+![gb15](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/15.PNG)
 
-<div><img src="gambar/ss11.png"></div>
+We have used a new tag ```linkextractor:step2``` for this image so that we don’t overwrite the image from ```the step1``` to illustrate that they can co-exist and containers can be run using either of these images.<br>
+![gb16](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/16.PNG)
 
 Running a one-off container using the ```linkextractor:step2``` image should now yield an improved output:
+![gb17](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/17.PNG)
 
-<div><img src="gambar/ss12.png"></div>
-
-Running a container using the previous image linkextractor:step1 should still result in the old output:
-
-<div><img src="gambar/ss13.png"></div>
+Running a container using the previous image ```linkextractor:step1``` should still result in the old output:<br>
+![gb18](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/18.PNG)
 
 So far, we have learned how to containerize a script with its necessary dependencies to make it more portable. We have also learned how to make changes in the application and build different variants of Docker images that can co-exist. In the next step we will build a web service that will utilize this script and will make the service run inside a Docker container.
 
