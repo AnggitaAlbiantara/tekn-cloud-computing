@@ -56,10 +56,23 @@ You can run the ```docker info``` command to verify that <strong>node1</strong> 
 The swarm is now initialized with <strong>node1</strong> as the only Manager node. In the next section you will add <strong>node2</strong> and <strong>node3</strong> as *Worker nodes*.
 
 ### Step 2.2 - Join Worker nodes to the Swarm
+You will perform the following procedure on <strong>node2</strong> and <strong>node3</strong>. Towards the end of the procedure you will switch back to <strong>node1</strong>.
 
-<div><img src="gambar/ss6.jpg"></div>
-<div><img src="gambar/ss7.jpg"></div>
+Now, take the entire ```docker swarm join ...``` command we copied earlier from ```node1``` where it was displayed as terminal output. We need to paste the copied command into the terminal of <strong>node2</strong> and <strong>node3</strong>.
 
+It should look something like this for <strong>node2</strong>. By the way, if the ```docker swarm join ...``` command scrolled off your screen already, you can run the ```docker swarm join-token worker``` command on the Manager node to get it again.
+
+``Remember, the tokens displayed here are not the actual tokens you will use. Copy the command from the output on node1. On node2 and node3 it should look like this:``<br>
+![gb5](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/5.PNG)<br>
+![gb6](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/6.PNG)<br>
+![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/7.PNG)
+
+Once you have run this on <strong>node2</strong> and <strong>node3</strong>, switch back to <strong>node1</strong>, and run a ```docker node ls``` to verify that both nodes are part of the Swarm. You should see three nodes, <strong>node1</strong> as the Manager node and <strong>node2</strong> and <strong>node3</strong> both as Worker nodes.<br>
+![gb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/8.PNG)
+
+The ```docker node ls``` command shows you all of the nodes that are in the swarm as well as their roles in the swarm. The ```*``` identifies the node that you are issuing the command from.
+
+Congratulations! You have configured a swarm with one manager node and two worker nodes.
 ## Section 3: Deploy applications across multiple hosts
 
 ### Step 3.1 - Deploy the application components as Docker services
