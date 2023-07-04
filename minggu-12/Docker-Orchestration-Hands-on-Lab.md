@@ -97,13 +97,29 @@ At this point it may not seem that we have done anything very differently than j
 
 Well done. You have deployed the sleep-app to your new Swarm using Docker services.
 ## Section 4: Scale the application
+Demand is crazy! Everybody loves your ```sleep``` app! It’s time to scale out.
 
-<div><img src="gambar/ss9.jpg"></div>
-<div><img src="gambar/ss10.jpg"></div>
-<div><img src="gambar/ss11.jpg"></div>
-<div><img src="gambar/ss12.jpg"></div>
-<div><img src="gambar/ss13.jpg"></div>
+One of the great things about *services* is that you can scale them up and down to meet demand. In this step you’ll scale the service up and then back down.
 
+You will perform the following procedure from <strong>node1</strong>.
+
+Scale the number of containers in the <strong>sleep-app</strong> service to 7 with the ```docker service update --replicas 7 sleep-app``` command. ```replicas``` is the term we use to describe identical containers providing the same service.<br>
+![gb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/11.PNG)
+
+The Swarm manager schedules so that there are 7 ```sleep-app containers``` in the cluster. These will be scheduled evenly across the Swarm members.
+
+We are going to use the ```docker service ps sleep-app``` command. If you do this quick enough after using the ```--replicas``` option you can see the containers come up in real time.<br>
+![gb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/12.PNG)
+
+Notice that there are now 7 containers listed. It may take a few seconds for the new containers in the service to all show as <strong>RUNNING</strong>. The ```NODE``` column tells us on which node a container is running.
+
+Scale the service back down to just four containers with the ```docker service update --replicas 4 sleep-app``` command.<br>
+![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/13.PNG)
+
+Verify that the number of containers has been reduced to 4 using the ```docker service ps sleep-app``` command.<br>
+![gb14](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/14.PNG)
+
+You have successfully scaled a swarm service up and down.
 ## Section 5: Drain a node and reschedule the containers
 
 <div><img src="gambar/ss14.jpg"></div>
