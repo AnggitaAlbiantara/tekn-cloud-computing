@@ -49,23 +49,30 @@ This is where application containerization tools like Docker come in handy. In t
 
 ## Step 1: Containerized Link Extractor Script
 
-Checkout the ```step1``` branch and list files in it. We have added one new file (i.e., ```Dockerfile```) in this step. Let’s look into its contents:
+Checkout the ```step1``` branch and list files in it.<br>
+![gb7](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/7.PNG)
 
-<div><img src="gambar/ss5.png"></div>
+We have added one new file (i.e., ```Dockerfile```) in this step. Let’s look into its contents:<br>
+![gb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/8.PNG)<br>
+Using this Dockerfile we can prepare a Docker image for this script. We start from the official python Docker image that contains Python’s run-time environment as well as necessary tools to install Python packages and dependencies. We then add some metadata as labels (this step is not essential, but is a good practice nonetheless). Next two instructions run the pip install command to install the two third-party packages needed for the script to function properly. We then create a working directory /app, copy the linkextractor.py file in it, and change its permissions to make it an executable script. Finally, we set the script as the entrypoint for the image.
 
-Using this ```Dockerfile``` we can prepare a Docker image for this script. So far, we have just described how we want our Docker image to be like, but didn’t really build one. So let’s do just that:
+Using this ```Dockerfile``` we can prepare a Docker image for this script.<br>
+![gb9](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/9.PNG)
 
-<div><img src="gambar/ss6.png"></div>
+So far, we have just described how we want our Docker image to be like, but didn’t really build one. So let’s do just that:<br>
+This command should yield an output as illustrated below:<br>
+![gb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/10.PNG)
 
-We have created a Docker image named ```linkextractor:step1``` based on the ```Dockerfile``` illustrated above. If the build was successful, we should be able to see it in the list of image:
+We have created a Docker image named ```linkextractor:step1``` based on the ```Dockerfile``` illustrated above. If the build was successful, we should be able to see it in the list of image:<br>
+![gb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/11.PNG)
 
-<div><img src="gambar/ss7.png"></div>
+This image should have all the necessary ingredients packaged in it to run the script anywhere on a machine that supports Docker. Now, let’s run a one-off container with this image and extract links from some live web pages:<br>
+This outputs a single link that is present in the simple ```example.com``` web page.<br>
+![gb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/11.PNG)
 
-This image should have all the necessary ingredients packaged in it to run the script anywhere on a machine that supports Docker. Now, let’s run a one-off container with this image and extract links from some live web pages. This outputs a single link that is present in the simple ```example.com``` web page. Let’s try it on a web page with more links in it:
-
-<div><img src="gambar/ss8.png"></div>
-
-In the next step we will make these changes and some other improvements to the script.
+Let’s try it on a web page with more links in it:<br>
+![gb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/12.PNG)<br>
+This looks good, but we can improve the output. For example, some links are relative, we can convert them into full URLs and also provide the anchor text they are linked to. In the next step we will make these changes and some other improvements to the script.
 
 ## Step 2: Link Extractor Module with Full URI and Anchor Text
 
