@@ -1,7 +1,5 @@
 # Application Containerization and Microservice Orchestration
 
-Laporan beserta gambar dibawah ini adalah hasil praktikum melalui [Application Containerization and Microservice Orchestration](https://training.play-with-docker.com/microservice-orchestration/), sehingga untuk materi dan penjelasan lebih detailnya dapat diakses melalui web tersebut.
-
 ### Steps
 
 - [Stage Setup](app-containerization-orchestration.md#stage-setup)
