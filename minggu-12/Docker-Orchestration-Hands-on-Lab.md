@@ -120,15 +120,38 @@ Verify that the number of containers has been reduced to 4 using the ```docker s
 ![gb14](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/14.PNG)
 
 You have successfully scaled a swarm service up and down.
-## Section 5: Drain a node and reschedule the containers
 
-<div><img src="gambar/ss14.jpg"></div>
-<div><img src="gambar/ss15.jpg"></div>
-<div><img src="gambar/ss16.jpg"></div>
-<div><img src="gambar/ss17.jpg"></div>
-<div><img src="gambar/ss18.jpg"></div>
-<div><img src="gambar/ss19.jpg"></div>
-<div><img src="gambar/ss20.jpg"></div>
+## Section 5: Drain a node and reschedule the containers
+Your sleep-app has been doing amazing after hitting Reddit and HN. It’s now number 1 on the App Store! You have scaled up during the holidays and down during the slow season. Now you are doing maintenance on one of your servers so you will need to gracefully take a server out of the swarm without interrupting service to your customers.
+
+Take a look at the status of your nodes again by running ```docker node ls``` on <strong>node1</strong>.<br>
+![gb15](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/15.PNG)
+
+You will be taking <strong>node2</strong> out of service for maintenance.
+
+Let’s see the containers that you have running on <strong>node2</strong>.<br>
+![gb16](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/16.PNG)
+
+You can see that we have one of the slepp-app containers running here (your output might look different though).
+
+Now let’s jump back to <strong>node1</strong> (the Swarm manager) and take <strong>node2</strong> out of service. To do that, let’s run ```docker node ls``` again.<br>
+![gb17](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/17.PNG)
+
+We are going to take the <strong>ID</strong> for <strong>node2</strong> and run ```docker node update --availability drain yournodeid```. We are using the <strong>node2</strong> host <strong>ID</strong> as input into our ```drain``` command. Replace yournodeid with the id of <strong>node2</strong>.<br>
+![gb18](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/18.PNG)
+
+Check the status of the nodes<br>
+![gb19](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/19.PNG)
+
+Node <strong>node2</strong> is now in the ```Drain``` state.
+
+Switch back to <strong>node2</strong> and see what is running there by running ```docker ps```.<br>
+![gb20](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/20.PNG)
+
+<strong>node2</strong> does not have any containers running on it.
+
+Lastly, check the service again on <strong>node1</strong> to make sure that the container were rescheduled. You should see all four containers running on the remaining two nodes.<br>
+![gb21](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/21.PNG)
 
 ## Cleaning Up
 
