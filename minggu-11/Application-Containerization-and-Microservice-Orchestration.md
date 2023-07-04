@@ -258,39 +258,46 @@ We have successfully orchestrated three microservices to compose our Link Extrac
 
 ## Step 6: Swap Python API Service with Ruby
 
-Checkout the step6 branch and list files in it.
+Checkout the step6 branch and list files in it.<br>
+![gb48](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/48.PNG)<br>
 
-<div><img src="gambar/ss47.png"></div>
+Some significant changes from the previous step include:
+- The API service written in Python is replaced with a similar Ruby implementation
+- The ```API_ENDPOINT``` environment variable is updated to point to the new Ruby API service
+- The link extraction cache event (HIT/MISS) is logged and is persisted using volumes
 
-Notice that the ./api folder does not contain any Python scripts, instead, it now has a Ruby file and a Gemfile to manage dependencies. Let’s have a quick walk through the changed files:
+Notice that the ```./api``` folder does not contain any Python scripts, instead, it now has a Ruby file and a ```Gemfile``` to manage dependencies.
 
-<div><img src="gambar/ss48.png"></div>
+Let’s have a quick walk through the changed files:<br>
+![gb49](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/49.PNG)<br>
 
-This Ruby file is almost equivalent to what we had in Python before, except, in addition to that it also logs the link extraction requests and corresponding cache events. In a microservice architecture application swapping components with an equivalent one is easy as long as the expectations of consumers of the component are maintained.
+This Ruby file is almost equivalent to what we had in Python before, except, in addition to that it also logs the link extraction requests and corresponding cache events. In a microservice architecture application swapping components with an equivalent one is easy as long as the expectations of consumers of the component are maintained.<br>
+![gb50](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/50.PNG)<br>
 
-<div><img src="gambar/ss49.png"></div>
-
-Above Dockerfile is written for the Ruby script and it is pretty much self-explanatory.
-
-<div><img src="gambar/ss50.png"></div>
+Above Dockerfile is written for the Ruby script and it is pretty much self-explanatory.<br>
+![gb51](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/51.PNG)<br>
 
 The ```docker-compose.yml``` file has a few minor changes in it. The ```api``` service image is now named ```linkextractor-api:step6-ruby```, the port mapping is changed from ```5000``` to ```4567``` (which is the default port for Sinatra server), and the `API_ENDPOINT` environment variable in the ```web``` service is updated accordingly so that the PHP code can talk to it.
 
-With these in place, let’s boot our service stack:
+With these in place, let’s boot our service stack:<br>
+![gb52](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/52.PNG)<br>
 
-<div><img src="gambar/ss51.png"></div>
+We should now be able to access the API (using the updated port number):<br>
+![gb53](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/53.PNG)<br>
 
-We should now be able to access the API (using the updated port number):
+Now, open the web interface by [clicking the Link Extractor](https://training.play-with-docker.com/) and extract links of a few URLs. Also, try to repeat these attempts for some URLs. Also, try to repeat these attempts for some URLs. If everything is alright, the web application should behave as before without noticing any changes in the API service (which is completely replaced).
 
-<div><img src="gambar/ss52.png"></div>
+We can use the ```tail``` command with the ```-f``` or ```--follow``` option to follow the log output live.<br>
+![gb54](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/54.PNG)<br>
+![gb55-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/c2f2ec77685a6ab7c9a306713d63ae7ad874dbbb/minggu-11/55-1.png)
 
-Now, open the web interface by [clicking the Link Extractor](https://training.play-with-docker.com/) and extract links of a few URLs. Also, try to repeat these attempts for some URLs.
+Try a few more URLs in the web interface. You should see the new log entries appear in the terminal.<br>
+To stop following the log, press ```Ctrl + C``` keys while the interactive terminal is in focus.<br>
+We can shut the stack down now:<br>
+![gb56](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/56.PNG)<br>
 
-<div><img src="gambar/ss53.png"></div>
-
-We can shut the stack down now. Since we have persisted logs, they should still be available after the services are gone:
-
-<div><img src="gambar/ss54.png"></div>
+Since we have persisted logs, they should still be available after the services are gone:<br>
+![gb57](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/57.PNG)<br>
 
 This illustrates that the caching is functional as the second attempt to the ```http://example.com/``` resulted in a cache ```HIT```.
 
