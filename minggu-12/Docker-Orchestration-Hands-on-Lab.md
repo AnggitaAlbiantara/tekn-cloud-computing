@@ -74,11 +74,28 @@ The ```docker node ls``` command shows you all of the nodes that are in the swar
 
 Congratulations! You have configured a swarm with one manager node and two worker nodes.
 ## Section 3: Deploy applications across multiple hosts
+Now that you have a swarm up and running, it is time to deploy our really simple sleep application.
+
+You will perform the following procedure from <strong>node1</strong>.
 
 ### Step 3.1 - Deploy the application components as Docker services
+Our ```sleep``` application is becoming very popular on the internet (due to hitting Reddit and HN). People just love it. So, you are going to have to scale your application to meet peak demand. You will have to do this across multiple hosts for high availability too. We will use the concept of *Services* to scale our application easily and manage many containers as a single entity.
 
-<div><img src="gambar/ss8.jpg"></div>
+``Services were a new concept in Docker 1.12. They work with swarms and are intended for long-running containers.``
 
+You will perform this procedure from <strong>node1</strong>.
+
+Let’s deploy ```sleep``` as a *Service* across our Docker Swarm.<br>
+![gb9](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/9.PNG)
+
+Verify that the ```service create``` has been received by the Swarm manager.<br>
+![gb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/5726e2bbb3b0af82e191b90b0dbc62245ec550eb/minggu-12/10.PNG)
+
+The state of the service may change a couple times until it is running. The image is being downloaded from Docker Store to the other engines in the Swarm. Once the image is downloaded the container goes into a running state on one of the three nodes.
+
+At this point it may not seem that we have done anything very differently than just running a ```docker run ....``` We have again deployed a single container on a single host. The difference here is that the container has been scheduled on a swarm cluster.
+
+Well done. You have deployed the sleep-app to your new Swarm using Docker services.
 ## Section 4: Scale the application
 
 <div><img src="gambar/ss9.jpg"></div>
