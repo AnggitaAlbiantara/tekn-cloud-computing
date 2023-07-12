@@ -21,8 +21,7 @@
 4. Push sample ke Docker Hub dengan mengetikkan perintah ```docker push anggitaalbiantara/mysql_docker:latesst.<br>
 ![gb9](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/e5acb25c17f93fe4108cb6ac59c79a469f2c6286/UAS/Gambar%20Hasil%20Praktek/9.PNG)
 
-
-
+# Mencoba Menjalankan Perintah SQL
+Disini saya membuat perintah SQL untuk CRUD (Create, Read, Update, dan Delete) data dalam database, untuk perintah yang pertama disini saya membuat sebuah database dengan mengetikkan perintah ```CREATE database mahasiswa;```, setelah itu membuat table list_mahasiswa dengan perintah ```CREATE TABLE list_mahasiswa (id varchar (20) NOT NULL, nama varchar (255) NOT NULL, nim varchar (15) NOT NULL, PRIMARY KEY (id));```, selanjutnya isikan data ke dalam table list_mahasiswa dengan mengetikkan perintah ```INSERT INTO list_mahasiswa (id, nama, nim) VALUES ('mhs_1', `Anggita Albiantara', '205610012');```, lalu membaca data yang diinputkan tadi dengan perintah ```SELECT * FROM list_mahasiswa;```, lalu update data, disini saya mengupdate data nama yang awalnya ***Anggita Albiantara*** di update menjadi ***Anggita Albiantara (Albian)*** dengan mengetikkan perintah ```UPDATE list_mahasiswa SET nama='Anggita Albiantara (Albian)' WHERE nim='205610012';```, Cek lagi apakah data berhasil terupdate atau tidak dengan mengetikkan perintah ```SELECT * FROM list_mahasiswa;```, Proses yang terakhir adalah menghapus data mahasiswa yang tersimpan di table dengan mengetikkan perintah ```DELETE FROM list_mahasiswa;```, cek kembali apakah data berhasil terhapus atau tidak dengan mengetikkan perintah ```SELECT * FROM list_mahasiswa```, disini proses CRUD pada MySQL telah berhasil dilakukan<br>
 ![gb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/e5acb25c17f93fe4108cb6ac59c79a469f2c6286/UAS/Gambar%20Hasil%20Praktek/10.PNG)
 ![gb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/e5acb25c17f93fe4108cb6ac59c79a469f2c6286/UAS/Gambar%20Hasil%20Praktek/11.PNG)
-![gb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/e5acb25c17f93fe4108cb6ac59c79a469f2c6286/UAS/Gambar%20Hasil%20Praktek/12.PNG)
