@@ -45,3 +45,16 @@ On cloud providers that support load balancers, an external IP address would be 
 ![gb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/11.PNG)<br>
 ![gb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/12.PNG)
 
+## Step 4 : [Enable add-ons](https://kubernetes.io/docs/tutorials/hello-minikube/#enable-addons)
+
+1. View list the currently supported addons with following this command ```minikube addons list```:<br>
+![gb13](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/13.PNG)
+
+2. Enable an addons metrics server, with following this command ```minikube addons enable metrics-server```:<br>
+![gb14](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/14.PNG)
+
+3. View the Pod and Service you created by installing that addon with following this command ```kubectl get pod,svc -n kube-system```:<br>
+![gb15](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/15.PNG)
+
+4. Disable metrics server with following this command ```minikube addons disable metrics-server```:<br>
+![gb16](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/16.PNG)
