@@ -13,7 +13,7 @@
 ![gb3-1](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/4c1ec7c3f9011fa43bb4fafe03ddfd006a5feb58/minggu-12/3-1.PNG)
 ![gb3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/3.PNG)
 
-## Step 2 : [Create a Deployment](https://kubernetes.io/docs/tutorials/hello-minikube/)
+## Step 2 : [Create a Deployment](https://kubernetes.io/docs/tutorials/hello-minikube/#create-a-deployment)
 
 1. Type the following command ```kubectl create``` to create a Deployment that manages a Pod in the command prompt. The Pod runs a Container based on the provided Docker image.<br>
 ![gb4](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/4.PNG)
@@ -29,3 +29,19 @@
 
 5. See the kubectl configuration with following this command ```kubectl config view``` in the command prompt.<br>
 ![gb8](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/8.PNG)
+
+## Step 3 : [Create a Service](https://kubernetes.io/docs/tutorials/hello-minikube/#create-a-service)
+
+1. Expose the Pod to the public internet using the ```kubectl expose``` command:<br>
+![gb9](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/9.PNG)<br>
+The --type=LoadBalancer flag indicates that you want to expose your Service outside of the cluster.<br>
+The application code inside the test image only listens on TCP port 8080. If you used kubectl expose to expose a different port, clients could not connect to that other port.
+
+2. See the Service that was created earlier, with following this command ```kubectl get services``` in the command prompt.<br>
+![gb10](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/10.PNG)
+On cloud providers that support load balancers, an external IP address would be provisioned to access the Service. On minikube, the LoadBalancer type makes the Service accessible through the minikube service command.
+
+3. Run the following command ```minikube service hello-node``` in the command prompt, and opens up a browser window that serves your app and shows the app's response.<br>
+![gb11](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/11.PNG)<br>
+![gb12](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/12.PNG)
+
