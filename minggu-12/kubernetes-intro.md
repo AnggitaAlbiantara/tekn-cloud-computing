@@ -1,6 +1,6 @@
 # Kubernetes Intro
 
-## Step 1 : Minikube Installation & Configuration
+## Step 1 : [Minikube Installation & Configuration](https://minikube.sigs.k8s.io/docs/start/)
 1. Download Minikube Installer and run the installer for the latest release in [this link](https://storage.googleapis.com/minikube/releases/latest/minikube-installer.exe).<br>
 
 2. Start Cluster by run a command prompt with administrator access and then type the following command ```minikube start```:<br>
@@ -9,10 +9,10 @@
 3. Try Interact With The Cluster and then type the following command ```kubectl get po -A``` in the command prompt<br>
 ![gb2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/2.PNG)
 
-4. Type the following command ```minikube dashboard``` in the command prompt and then access in [this link](http://127.0.0.1:65355/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default)<br>
+4. Open a new terminal and type the following command ```minikube dashboard``` in the command prompt and then access in [this link](http://127.0.0.1:65355/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default)<br>
 ![gb3](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/3.PNG)
 
-## Step 0: Basic Link Extractor Script
+## Step 2 : [Create a Deployment](https://kubernetes.io/docs/tutorials/hello-minikube/)
 
 Checkout the ```step0``` branch and list files in it.<br>
 ![gb2](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/6d00c22b7522e0eb3b28de4b6ddd257719015837/minggu-11/2.PNG)
