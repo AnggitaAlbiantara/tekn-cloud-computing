@@ -58,3 +58,15 @@ On cloud providers that support load balancers, an external IP address would be 
 
 4. Disable metrics server with following this command ```minikube addons disable metrics-server```:<br>
 ![gb16](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/16.PNG)
+
+## Step 5 : [Clean Up](https://kubernetes.io/docs/tutorials/hello-minikube/#clean-up)
+
+1. Try to clean up the resources you created in your cluster, with following this command ```kubectl delete service hello-node & kubectl delete deployment hello-node```:<br>
+![gb17](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/17.PNG)<br>
+![gb18](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/18.PNG)
+
+2. Stop the Minikube cluster with following this command ```minikube stop```.<br>
+![gb19](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/19.PNG)
+
+3. Optionally, delete the Minikube Virtual Machine with following this command ```minikube delete```:<br>
+![gb20](https://github.com/AnggitaAlbiantara/tekn-cloud-computing/blob/83c07e4af729039a36c6fc517e195fb7d63c4401/minggu-12/20.PNG)
